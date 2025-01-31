@@ -1,14 +1,14 @@
 <template>
     <section>
-        <div class="finder">
-            <img class="light" src="@/assets/img/light8.png" alt="">
-            <p class="heading-1">{{ pageTitle }}</p>
-            <div class="flex">
+        <div class="finder" data-aos="fade-up">
+            <img class="light" src="@/assets/img/light8.png" alt="" data-aos="fade-left">
+            <p class="heading-1" data-aos="fade-right">{{ pageTitle }}</p>
+            <div class="flex" data-aos="fade-up">
                 <router-link to="/">
-                    <p class="heading-11">Home</p>
+                    <p class="heading-11" data-aos="fade-left">Home</p>
                 </router-link>
-                <img class="transform" src="@/assets/img/arrow.png" alt="">
-                <p class="body-1">{{ pageTitle }}</p>
+                <img class="transform" src="@/assets/img/arrow.png" alt="" data-aos="zoom-in">
+                <p class="body-1" data-aos="fade-right">{{ pageTitle }}</p>
             </div>
         </div>
     </section>
@@ -20,12 +20,15 @@ import { useRoute } from 'vue-router';
 
 const route = useRoute();
 
-// Настройка текста заголовка на основе текущего пути
 const pageTitle = computed(() => {
     const routeName = route.name;
     if (routeName === 'AboutPage') return 'About Us';
     if (routeName === 'OurService') return 'Our Service';
     if (routeName === 'Detailservice') return 'Detail service';
+    if (routeName === 'PricingPlan') return 'Pricing Plan';
+    if (routeName === 'Blog') return 'Blog';
+    if (routeName === 'Ourteam') return 'Our team';
+    if (routeName === 'Contactus') return 'Contact Us';
     return 'Page Not Found';
 });
 

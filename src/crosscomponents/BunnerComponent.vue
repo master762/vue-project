@@ -190,7 +190,7 @@ div img {
 </style>
 
 <script setup>
-import { defineProps } from 'vue';
+
 defineProps({
   showText: {
     type: Boolean,

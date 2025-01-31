@@ -1,11 +1,13 @@
 <template>
     <section>
         <div class="flex">
-            <div class="bg-img"></div>
-            <div class="left">
-                <p class="custom-text">ABOUT US</p>
-                <p class="heading-2">Bringing Your Vision to Life: Learn About VRNas</p>
-                <p class="body-1">VRNas is a leading provider of VR services for education, entertainment, architecture,
+            <div class="bg-img" data-aos="fade-in"></div>
+            <div class="left" data-aos="fade-up">
+                <p class="custom-text" data-aos="fade-up" data-aos-delay="200">ABOUT US</p>
+                <p class="heading-2" data-aos="fade-up" data-aos-delay="400">Bringing Your Vision to Life: Learn About
+                    VRNas</p>
+                <p class="body-1" data-aos="fade-up" data-aos-delay="600">VRNas is a leading provider of VR services for
+                    education, entertainment, architecture,
                     and events. Our mission is to bring the power of virtual reality to everyone, allowing them to
                     explore new worlds, learn in new ways, and experience events in a whole new light.
                     Our team consists of experienced VR developers, designers, and technicians who are passionate about
@@ -16,10 +18,10 @@
                     experience.</p>
             </div>
             <div class="right">
-                <div class="bacground">
-                    <img src="@/assets/img/Image7.png" alt="">
-                    <img src="@/assets/img/Light9.png" alt="">
-                    <img src="@/assets/img/video3.png" alt="">
+                <div class="bacground" data-aos="zoom-in">
+                    <img src="@/assets/img/Image7.png" alt="" data-aos="fade-up" />
+                    <img src="@/assets/img/Light9.png" alt="" data-aos="fade-down" />
+                    <img src="@/assets/img/video3.png" alt="" data-aos="fade-left" />
                 </div>
             </div>
         </div>

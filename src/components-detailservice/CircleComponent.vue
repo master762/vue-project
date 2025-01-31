@@ -1,37 +1,37 @@
 <template>
     <section data-aos="fade" data-aos-delay="300">
-        <div class="center">
+        <div class="center" data-aos="fade-up">
             <p class="caption-1">OUR TRUSTED PARTNERS</p>
             <p class="heading-2">Discover the Companies We Work With</p>
         </div>
         <!-- полуэллипсы -->
         <div class="ellipses-container">
             <div class="ellipse ellipse-1">
-
                 <!-- компании -->
-                <div class="company">
+                <div class="company" data-aos="fade-up" data-aos-delay="50">
                     <p class="heading-12">VR <br>Development</p>
                 </div>
-                <div class="company">
+                <div class="company" data-aos="fade-up" data-aos-delay="100">
                     <p class="heading-12">VR <br>Games</p>
                 </div>
-                <div class="company">
+                <div class="company" data-aos="fade-up" data-aos-delay="150">
                     <p class="heading-12">VR <br>Events</p>
                 </div>
-                <div @click="switchChild" class="company">
+                <div @click="switchChild" class="company" data-aos="fade-up" data-aos-delay="200">
                     <p class="heading-12">VR <br>Design</p>
                 </div>
-                <div class="company">
+                <div class="company" data-aos="fade-up" data-aos-delay="250">
                     <p class="heading-12">VR <br>Consulting</p>
                 </div>
-                <div class="company">
+                <div class="company" data-aos="fade-up" data-aos-delay="300">
                     <p class="heading-12">VR <br>Entertainment</p>
                 </div>
-                <div class="company">
+                <div class="company" data-aos="fade-up" data-aos-delay="350">
                     <p class="heading-12">VR <br>Testimony</p>
                 </div>
             </div>
 
+            <!-- No AOS animations applied to ellipses -->
             <div class="ellipse ellipse-2"></div>
             <div class="ellipse ellipse-3"></div>
             <div class="ellipse ellipse-4"></div>
@@ -42,6 +42,7 @@
         </div>
     </section>
 </template>
+
 
 
 <style scoped>

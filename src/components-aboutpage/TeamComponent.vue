@@ -1,34 +1,34 @@
 <template>
     <section>
         <!-- заголовки, кнопка -->
-        <p class="custom-txt">OUR TEAM</p>
-        <div class="flex">
+        <p class="custom-txt" data-aos="fade-up">OUR TEAM</p>
+        <div class="flex" data-aos="fade-up">
             <p class="heading-2">Our Professionals Team</p>
-            <button class="btn"><span class="button-1">SEE ALL</span></button>
+            <button class="btn" data-aos="fade-up" data-aos-delay="200"><span class="button-1">SEE ALL</span></button>
         </div>
         <div class="images">
-            <div class="image-card">
+            <div class="image-card" data-aos="fade-up" data-aos-delay="400">
                 <img src="@/assets/img/team1.png" alt="">
                 <div class="text">
                     <p class="heading-10">Bondan Prabowo</p>
                     <p class="body-4">CEO</p>
                 </div>
             </div>
-            <div class="image-card">
+            <div class="image-card" data-aos="fade-up" data-aos-delay="600">
                 <img src="@/assets/img/team2.png" alt="">
                 <div class="text">
                     <p class="heading-10">Bayu Aji</p>
                     <p class="body-4">CBQ</p>
                 </div>
             </div>
-            <div class="image-card">
+            <div class="image-card" data-aos="fade-up" data-aos-delay="800">
                 <img src="@/assets/img/team3.png" alt="">
                 <div class="text">
                     <p class="heading-10">Ayung Brandon</p>
                     <p class="body-4">VRI Development</p>
                 </div>
             </div>
-            <div class="image-card">
+            <div class="image-card" data-aos="fade-up" data-aos-delay="1000">
                 <img src="@/assets/img/team4.png" alt="">
                 <div class="text">
                     <p class="heading-10">Aril Laao</p>
@@ -38,6 +38,7 @@
         </div>
     </section>
 </template>
+
 
 <style scoped>
 .heading-10 {

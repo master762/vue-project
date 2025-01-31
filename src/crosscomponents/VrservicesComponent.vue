@@ -11,6 +11,7 @@
       </p>
       <div class="components" data-aos="fade-in" data-aos-duration="1500">
         <div class="bacground">
+          <img class="man" src="@/assets/img/Image7.png" alt="" data-aos="zoom-in" data-aos-delay="800" />
           <div class="text">
             <!-- Основной текст -->
             <div class="imageandtextblock" data-aos="fade-right" data-aos-delay="200">
@@ -44,6 +45,7 @@
                 </p>
               </div>
             </div>
+
             <img class="light" src="@/assets/img/Light6.png" alt="" data-aos="zoom-in" data-aos-delay="800" />
             <!-- Блок с ценой -->
             <div class="priceblock" data-aos="flip-up" data-aos-delay="1000">
@@ -185,6 +187,14 @@
   top: -60px;
   right: 0;
 }
+
+.man {
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 
 button {
   background: var(--linear);

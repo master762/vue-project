@@ -1,14 +1,16 @@
 <template>
     <section>
         <div class="container-txt">
-            <p class="custom-txt">FAQ</p>
-            <p class="heading-2">Frequently Asked Questions</p>
-            <p class="body-1">At VRNas, we want to make sure that you have all the information you need to make informed
+            <p class="custom-txt" data-aos="fade-up">FAQ</p>
+            <p class="heading-2" data-aos="fade-up" data-aos-delay="200">Frequently Asked Questions</p>
+            <p class="body-1" data-aos="fade-up" data-aos-delay="400">At VRNas, we want to make sure that you have all
+                the information you need to make informed
                 decisions about our VR services. Here are some of the most common questions we receive:</p>
-            <img class="light" src="@/assets/img/Light11.png" alt="">
+            <img class="light" src="@/assets/img/Light11.png" alt="" data-aos="zoom-in" data-aos-delay="600">
         </div>
         <div class="accordion">
-            <div class="accordion-item" v-for="(item, index) in items" :key="index" :class="{ active: item.isOpen }">
+            <div class="accordion-item" v-for="(item, index) in items" :key="index" :class="{ active: item.isOpen }"
+                data-aos="fade-up" :data-aos-delay="index * 100 + 700">
                 <button class="accordion-header" @click="toggleAccordion(index)">
                     <span class="heading-8">{{ item.title }}</span>
                     <img src="@/assets/img/arrow.png" alt="" class="arrow" :class="{ active: item.isOpen }" />
@@ -20,6 +22,7 @@
         </div>
     </section>
 </template>
+
 
 <style scoped>
 .custom-txt {

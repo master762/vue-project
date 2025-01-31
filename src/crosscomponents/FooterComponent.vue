@@ -35,35 +35,63 @@
         </div>
         <div class="right">
           <div class="quicklinks" data-aos="fade-up" data-aos-delay="400">
+
             <p class="heading-10">Quicklinks</p>
-            <p class="custom-text">Our Team</p>
+            <router-link to="/Ourteam">
+              <p class="custom-text">Our Team</p>
+            </router-link>
             <router-link to="/">
               <p class="custom-text">Home</p>
             </router-link>
-            <p class="custom-text">Pricing Plan</p>
+
+            <router-link to="/PricingPlan">
+              <p class="custom-text">Pricing Plan</p>
+            </router-link>
+
             <router-link to="/OurService">
               <p class="custom-text">Service</p>
             </router-link>
-            <p class="custom-text">Blog</p>
+
+            <router-link to="/Blog">
+              <p class="custom-text">Blog</p>
+            </router-link>
           </div>
 
           <div class="support" data-aos="fade-up" data-aos-delay="500">
+
             <p class="heading-10">Support</p>
+
             <router-link to="/About">
               <p class="custom-text">About us</p>
             </router-link>
-            <p class="custom-text">Contact us</p>
+            <router-link to=" /Contactus">
+              <p class="custom-text">Contact us</p>
+            </router-link>
+
             <p class="custom-text">FAQ</p>
+
             <p class="custom-text">Tems & Conditions</p>
+
             <p class="custom-text">Privacy Policy</p>
+
           </div>
 
           <div class="help" data-aos="fade-up" data-aos-delay="600">
             <p class="heading-10">Need Help?</p>
-            <p class="custom-text"> <img src="@/assets/img/help.png" alt="" /> Tanjung Sari Street no.48, Pontianak City
-            </p>
-            <p class="custom-text"> <img src="@/assets/img/help1.png" alt="" /> Support@VRNas.com</p>
-            <p class="custom-text"> <img src="@/assets/img/help2.png" alt="" /> +123 456 7890</p>
+            <a href="https://www.google.ru/maps/@-0.022861,109.3290922,182m/data=!3m1!1e3?hl=ru&entry=ttu&g_ep=EgoyMDI1MDEyOC4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank">
+              <p class="custom-text"> <img src="@/assets/img/help.png" alt="" /> Tanjung Sari Street no.48, Pontianak
+                City
+              </p>
+            </a>
+
+            <a href="mailto:Support@VRNas.com" target="_blank">
+              <p class="custom-text"> <img src="@/assets/img/help1.png" alt="" /> Support@VRNas.com</p>
+            </a>
+
+            <a href="tel:+123 456 7890" target="_blank">
+              <p class="custom-text"> <img src="@/assets/img/help2.png" alt="" /> +123 456 7890</p>
+            </a>
           </div>
         </div>
       </div>

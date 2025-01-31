@@ -41,27 +41,33 @@
                 <p class="navigation">Detail Service</p>
               </li>
             </router-link>
-            <li>
-              <p class="navigation">Page 2</p>
-            </li>
-            <li>
-              <p class="navigation">Page 3</p>
-            </li>
+            <router-link to="/PricingPlan">
+              <li>
+                <p class="navigation">Pricing Plan</p>
+              </li>
+            </router-link>
+            <router-link to="/Ourteam">
+              <li>
+                <p class="navigation">Our Team</p>
+              </li>
+            </router-link>
+
           </ul>
         </li>
         <li data-aos="fade-right" data-aos-delay="500" @click="toggleBlogMenu">
           <p class="navigation">Blog</p>
           <img src="@/assets/img/arrow.png" alt="" class="arrow">
           <ul v-if="isBlogMenuVisible" class="dropdown-menu">
-            <li>
-              <p class="navigation">Blog 1</p>
-            </li>
-            <li>
-              <p class="navigation">Blog 2</p>
-            </li>
-            <li>
-              <p class="navigation">Blog 3</p>
-            </li>
+            <router-link to="/Blog">
+              <li>
+                <p class="navigation">Blog</p>
+              </li>
+            </router-link>
+            <router-link to="/DetailBlog">
+              <li>
+                <p class="navigation">Detail Blog</p>
+              </li>
+            </router-link>
           </ul>
         </li>
       </ul>
@@ -70,9 +76,11 @@
     <!-- Кнопка -->
     <div class="buttonContainer" data-aos="zoom-in-left">
       <button class="AdaptButton"><img src="@/assets/img/btn.png"></button>
-      <button class="CustomButton">
-        <p class="button-2">Contact us</p>
-      </button>
+      <router-link to="/Contactus">
+        <button class="CustomButton">
+          <p class="button-2">Contact us</p>
+        </button>
+      </router-link>
     </div>
   </div>
 </template>

@@ -157,6 +157,14 @@
     opacity: 1;
 }
 
+.card:hover {
+    border: 1px solid;
+    border-image-source: var(--linear);
+    border-image-slice: 1;
+    cursor: pointer;
+    transform: scale(1.025);
+}
+
 .cards img {
     margin-top: 38px;
     margin-bottom: 60px;
@@ -174,14 +182,8 @@
     margin-top: 181px;
 }
 
-/* псевдоклассы */
-.card:hover {
-    border: 1px solid;
-    border-image-source: var(--linear);
-    border-image-slice: 1;
-    cursor: pointer;
-    transform: scale(1.025);
-}
+
+
 
 /* кнопка */
 .customText {
@@ -202,11 +204,9 @@
     border-image-slice: 1;
     position: absolute;
     top: 83%;
-    /* Центрируем по вертикали */
     left: 50%;
-    /* Центрируем по горизонтали */
     transform: translate(-50%, -50%);
-    /* Учитываем размеры кнопки */
+
 
     opacity: 0;
     z-index: 2;

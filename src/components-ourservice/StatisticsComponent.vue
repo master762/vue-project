@@ -1,22 +1,23 @@
 <template>
     <section>
         <div class="flex">
-            <div class="inf">
+            <div class="inf" data-aos="fade-up">
                 <p class="caption-1">HAPPY CLIENTS</p>
                 <p class="heading-2">123k+</p>
             </div>
-            <div class="inf">
+            <div class="inf" data-aos="fade-up" data-aos-delay="200">
                 <p class="caption-1">PROJECT COMPLETE</p>
                 <p class="heading-2">300k+</p>
                 <img src="@/assets/img/Bg.png" alt="">
             </div>
-            <div class="inf">
+            <div class="inf" data-aos="fade-up" data-aos-delay="400">
                 <p class="caption-1">YEARS EXPERIENCE</p>
                 <p class="heading-2">10+</p>
             </div>
         </div>
     </section>
 </template>
+
 
 <style scoped>
 .flex {
