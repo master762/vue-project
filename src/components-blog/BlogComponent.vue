@@ -1,7 +1,7 @@
 <template>
     <section>
         <div class="news-list">
-            <div v-for="news in currentNews" :key="news.id" class="new" data-aos="fade-up">
+            <div v-for="news in currentNews" :key="news.id" class="new">
                 <img :src="news.image" :alt="news.title" />
                 <div class="text">
                     <p class="caption-2">{{ news.category }}</p>
@@ -12,7 +12,7 @@
         </div>
         <div class="btn-container">
             <button v-for="page in newsData.length" :key="page" @click="changePage(page)"
-                :class="{ 'active': page === currentPage }" data-aos="fade-up">
+                :class="{ 'active': page === currentPage }">
                 {{ page }}
             </button>
         </div>

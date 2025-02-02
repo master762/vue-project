@@ -8,6 +8,8 @@ import Blog from '../pages/BlogPage.vue'
 import DetailBlog from '../pages/DetailblogPage.vue'
 import Ourteam from '../pages/Ourteampage.vue'
 import ContactusPage from '@/pages/ContactusPage.vue'
+import FaqPage from '@/pages/FaqPage.vue'
+import NotFoundPage from '@/pages/NotfoundPage.vue'
 
 const routes = [
   {
@@ -54,6 +56,16 @@ const routes = [
     path: '/Contactus',
     name: 'Contactus',
     component: ContactusPage,
+  },
+  {
+    path: '/Faq',
+    name: 'Faq',
+    component: FaqPage,
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: '404',
+    component: NotFoundPage,
   },
 ]
 

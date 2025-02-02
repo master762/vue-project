@@ -27,10 +27,10 @@
           </router-link>
           <!-- социальные сети, логотипы -->
           <div class="social" data-aos="fade-up" data-aos-delay="300">
-            <a href="https://www.example.com" target="_blank"><img src="@/assets/img/social.png" alt="" /></a>
-            <a href="https://www.example.com" target="_blank"><img src="@/assets/img/social1.png" alt="" /></a>
-            <a href="https://www.example.com" target="_blank"><img src="@/assets/img/social2.png" alt="" /></a>
-            <a href="https://www.example.com" target="_blank"><img src="@/assets/img/social3.png" alt="" /></a>
+            <a href="/" target="_blank"><img src="@/assets/img/social.png" alt="" /></a>
+            <a href="/" target="_blank"><img src="@/assets/img/social1.png" alt="" /></a>
+            <a href="/" target="_blank"><img src="@/assets/img/social2.png" alt="" /></a>
+            <a href="/" target="_blank"><img src="@/assets/img/social3.png" alt="" /></a>
           </div>
         </div>
         <div class="right">
@@ -67,8 +67,9 @@
             <router-link to=" /Contactus">
               <p class="custom-text">Contact us</p>
             </router-link>
-
-            <p class="custom-text">FAQ</p>
+            <router-link to="/faq">
+              <p class="custom-text">FAQ</p>
+            </router-link>
 
             <p class="custom-text">Tems & Conditions</p>
 
@@ -366,6 +367,3 @@
   }
 }
 </style>
-
-<script setup>
-</script>

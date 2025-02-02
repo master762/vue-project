@@ -7,7 +7,7 @@
                 <router-link to="/">
                     <p class="heading-11" data-aos="fade-left">Home</p>
                 </router-link>
-                <img class="transform" src="@/assets/img/arrow.png" alt="" data-aos="zoom-in">
+                <img class="transform" src="@/assets/img/arrow.png" alt="">
                 <p class="body-1" data-aos="fade-right">{{ pageTitle }}</p>
             </div>
         </div>
@@ -29,6 +29,7 @@ const pageTitle = computed(() => {
     if (routeName === 'Blog') return 'Blog';
     if (routeName === 'Ourteam') return 'Our team';
     if (routeName === 'Contactus') return 'Contact Us';
+    if (routeName === 'Faq') return 'FAQ';
     return 'Page Not Found';
 });
 

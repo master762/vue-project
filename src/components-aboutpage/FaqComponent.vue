@@ -1,16 +1,27 @@
 <template>
     <section>
+        <!-- заголовки -->
         <div class="container-txt">
-            <p class="custom-txt" data-aos="fade-up">FAQ</p>
-            <p class="heading-2" data-aos="fade-up" data-aos-delay="200">Frequently Asked Questions</p>
-            <p class="body-1" data-aos="fade-up" data-aos-delay="400">At VRNas, we want to make sure that you have all
-                the information you need to make informed
-                decisions about our VR services. Here are some of the most common questions we receive:</p>
-            <img class="light" src="@/assets/img/Light11.png" alt="" data-aos="zoom-in" data-aos-delay="600">
+            <p class="custom-txt">FAQ</p>
+            <p class="heading-2">Frequently Asked Questions</p>
+            <p class="body-1" data-aos="fade-up" data-aos-delay="400">
+                At VRNas, we want to make sure that you have all the information you need to make informed
+                decisions about our VR services. Here are some of the most common questions we receive:
+            </p>
+            <img class="light" src="@/assets/img/Light11.png" alt="light">
         </div>
+
+        <!-- кнопки для фильтрации (видны только на второй странице) -->
+        <div v-if="showFilter" class="filter">
+            <button class="styled-btn" @click="filterQuestions('All')">All</button>
+            <button class="styled-btn" @click="filterQuestions('VR Service')">VR Service</button>
+            <button class="styled-btn" @click="filterQuestions('Pricing')">Pricing</button>
+        </div>
+
+        <!-- аккордеон -->
         <div class="accordion">
-            <div class="accordion-item" v-for="(item, index) in items" :key="index" :class="{ active: item.isOpen }"
-                data-aos="fade-up" :data-aos-delay="index * 100 + 700">
+            <div class="accordion-item" v-for="(item, index) in filteredItems" :key="index"
+                :class="{ active: item.isOpen }">
                 <button class="accordion-header" @click="toggleAccordion(index)">
                     <span class="heading-8">{{ item.title }}</span>
                     <img src="@/assets/img/arrow.png" alt="" class="arrow" :class="{ active: item.isOpen }" />
@@ -141,46 +152,95 @@
     right: -30%;
     z-index: -1;
 }
+
+.filter {
+    display: flex;
+    max-width: 336px;
+    margin: 32px auto 32px auto;
+    gap: 24px;
+
+}
+
+.styled-btn {
+    height: 52px;
+    border: 1px solid;
+    border-image-source: var(--linear);
+    border-image-slice: 1;
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--White);
+    animation: borderAnimation 2s infinite alternate;
+}
+
+
+.styled-btn:nth-child(1) {
+    width: 65px;
+}
+
+.styled-btn:nth-child(2) {
+    width: 125px;
+}
+
+.styled-btn:nth-child(3) {
+    width: 98px;
+}
 </style>
 
+
 <script setup>
-import { ref } from 'vue';
+import { ref, computed, defineProps } from 'vue';
 
-const items = ref([
-    {
-        title: 'What is virtual reality?',
-        content: 'Virtual reality (VR) is a technology that uses headsets or other devices to create a simulated environment. Users can interact with this environment as if it were real, allowing for immersive experiences in gaming, education, training, and more.',
-        isOpen: false,
-    },
-    {
-        title: 'What types of VR services do you offer?',
-        content: 'We offer a variety of VR services including gaming, educational simulations, and professional training.',
-        isOpen: false,
-    },
-    {
-        title: 'How much does your VR services cost?',
-        content: 'The cost of our VR services varies depending on the type and duration of the experience. Please contact us for detailed pricing.',
-        isOpen: false,
-    },
-    {
-        title: 'What equipment do I need to use your VR services?',
-        content: 'You will need a compatible VR headset and a computer or gaming console that meets the required specifications.',
-        isOpen: false,
-    },
-    {
-        title: 'Can I try out your VR services before I commit?',
-        content: 'Yes, we offer demo sessions for potential customers to experience our VR services before making a commitment.',
-        isOpen: false,
-    },
-]);
+const props = defineProps({
+    isAlternative: Boolean, // Определяет, на какой странице используется компонент
+});
 
+// Данные для первой страницы (без фильтров)
+const onePage = [
+    { title: 'What is virtual reality?', content: 'Virtual reality (VR) is a technology that uses headsets or other devices to create a simulated environment. Users can interact with this environment as if it were real, allowing for immersive experiences in gaming, education, training, and more.', category: 'VR Service', isOpen: false },
+    { title: 'What types of VR services do you offer?', content: 'We offer a variety of VR services including gaming, educational simulations, and professional training.', category: 'VR Service', isOpen: false },
+    { title: 'How much does your VR services cost?', content: 'The cost of our VR services varies depending on the type and duration of the experience. Please contact us for detailed pricing.', category: 'Pricing', isOpen: false },
+    { title: 'What equipment do I need to use your VR services?', content: 'You will need a compatible VR headset and a computer or gaming console that meets the required specifications.', category: 'VR Service', isOpen: false },
+    { title: 'Can I try out your VR services before I commit?', content: 'Yes, we offer demo sessions for potential customers to experience our VR services before making a commitment.', category: 'VR Service', isOpen: false },
+];
+
+// Данные для второй страницы (с фильтрами)
+
+const twoPage = [
+    { title: 'What is virtual reality?', content: 'Virtual reality (VR) is a technology that uses headsets or other devices to create a simulated environment.', category: 'VR Service', isOpen: false },
+    { title: 'What types of VR services do you offer?', content: 'We offer a variety of VR services including gaming, educational simulations, and professional training.', category: 'VR Service', isOpen: false },
+    { title: 'What types of VR services do you offer?', content: 'We offer a variety of VR services including gaming, educational simulations, and professional training.', category: 'VR Service', isOpen: false },
+    { title: 'What types of VR services do you offer?', content: 'We offer a variety of VR services including gaming, educational simulations, and professional training.', category: 'VR Service', isOpen: false },
+    { title: 'How much does your VR services cost?', content: 'The cost of our VR services varies depending on the type and duration of the experience.', category: 'Pricing', isOpen: false },
+    { title: 'How much does your VR services cost?', content: 'The cost of our VR services varies depending on the type and duration of the experience.', category: 'Pricing', isOpen: false },
+    { title: 'How much does your VR services cost?', content: 'The cost of our VR services varies depending on the type and duration of the experience.', category: 'Pricing', isOpen: false },
+    { title: 'What equipment do I need to use your VR services?', content: 'You will need a compatible VR headset and a computer or gaming console that meets the required specifications.', category: 'VR Service', isOpen: false },
+    { title: 'What equipment do I need to use your VR services?', content: 'You will need a compatible VR headset and a computer or gaming console that meets the required specifications.', category: 'VR Service', isOpen: false },
+    { title: 'What equipment do I need to use your VR services?', content: 'You will need a compatible VR headset and a computer or gaming console that meets the required specifications.', category: 'VR Service', isOpen: false },
+    { title: 'Can I try out your VR services before I commit?', content: 'Yes, we offer demo sessions for potential customers to experience our VR services before making a commitment.', category: 'VR Service', isOpen: false },
+    { title: 'Can I try out your VR services before I commit?', content: 'Yes, we offer demo sessions for potential customers to experience our VR services before making a commitment.', category: 'VR Service', isOpen: false },
+    { title: 'Can I try out your VR services before I commit?', content: 'Yes, we offer demo sessions for potential customers to experience our VR services before making a commitment.', category: 'VR Service', isOpen: false },
+];
+// Логика фильтрации
+const items = ref(props.isAlternative ? twoPage : onePage);
+const selectedCategory = ref('All');
+
+// Фильтр отображаемых вопросов
+const filteredItems = computed(() => {
+    if (selectedCategory.value === 'All') return items.value;
+    return items.value.filter(item => item.category === selectedCategory.value);
+});
+
+// Фильтрация по категориям
+const filterQuestions = (category) => {
+    selectedCategory.value = category;
+};
+
+// Логика аккордеона
 const toggleAccordion = (index) => {
     items.value.forEach((item, i) => {
-        if (i === index) {
-            item.isOpen = !item.isOpen;
-        } else {
-            item.isOpen = false;
-        }
+        item.isOpen = i === index ? !item.isOpen : false;
     });
 };
+
+// Показывать ли кнопки фильтрации (только на второй странице)
+const showFilter = props.isAlternative;
 </script>
