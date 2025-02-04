@@ -8,7 +8,7 @@
                 At VRNas, we want to make sure that you have all the information you need to make informed
                 decisions about our VR services. Here are some of the most common questions we receive:
             </p>
-            <img class="light" src="@/assets/img/Light11.png" alt="light">
+            <img class="light" src="@/assets/img/Light11.png" alt="background light">
         </div>
 
         <!-- кнопки для фильтрации (видны только на второй странице) -->
@@ -24,7 +24,7 @@
                 :class="{ active: item.isOpen }">
                 <button class="accordion-header" @click="toggleAccordion(index)">
                     <span class="heading-8">{{ item.title }}</span>
-                    <img src="@/assets/img/arrow.png" alt="" class="arrow" :class="{ active: item.isOpen }" />
+                    <img src="@/assets/img/arrow.png" alt="arrow" class="arrow" :class="{ active: item.isOpen }" />
                 </button>
                 <div class="accordion-content" :class="{ open: item.isOpen }">
                     <p class="body-3">{{ item.content }}</p>

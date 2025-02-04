@@ -1,13 +1,13 @@
 <template>
     <section>
         <div class="finder" data-aos="fade-up">
-            <img class="light" src="@/assets/img/light8.png" alt="" data-aos="fade-left">
+            <img class="light" src="@/assets/img/light8.png" alt="background light" data-aos="fade-left">
             <p class="heading-1" data-aos="fade-right">{{ pageTitle }}</p>
             <div class="flex" data-aos="fade-up">
                 <router-link to="/">
                     <p class="heading-11" data-aos="fade-left">Home</p>
                 </router-link>
-                <img class="transform" src="@/assets/img/arrow.png" alt="">
+                <img class="transform" src="@/assets/img/arrow.png" alt="arrow">
                 <p class="body-1" data-aos="fade-right">{{ pageTitle }}</p>
             </div>
         </div>

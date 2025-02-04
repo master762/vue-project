@@ -8,16 +8,16 @@
         <div class="images">
             <!-- Карточки с изображениями, добавлены AOS анимации -->
             <div class="image-card" data-aos="fade-up" data-aos-duration="1000">
-                <a href="">
-                    <div class="Inst"><img src="@/assets/img/inst.png" alt=""></div>
+                <a href="/">
+                    <div class="Inst"><img src="@/assets/img/inst.png" alt="image inst"></div>
                 </a>
-                <a href="">
-                    <div class="face"><img src="@/assets/img/facebook.png" alt=""></div>
+                <a href="/">
+                    <div class="face"><img src="@/assets/img/facebook.png" alt="image facebook"></div>
                 </a>
-                <a href="">
-                    <div class="twit"><img src="@/assets/img/twitter.png" alt=""></div>
+                <a href="/">
+                    <div class="twit"><img src="@/assets/img/twitter.png" alt="image twitter"></div>
                 </a>
-                <img src="@/assets/img/team1.png" alt="">
+                <img src="@/assets/img/team1.png" alt="worker">
                 <div class="text">
                     <p class="heading-10">Bondan Prabowo</p>
                     <p class="body-4">CEO</p>
@@ -25,16 +25,16 @@
             </div>
 
             <div class="image-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                <a href="">
-                    <div class="Inst"><img src="@/assets/img/inst.png" alt=""></div>
+                <a href="/">
+                    <div class="Inst"><img src="@/assets/img/inst.png" alt="image inst"></div>
                 </a>
-                <a href="">
-                    <div class="face"><img src="@/assets/img/facebook.png" alt=""></div>
+                <a href="/">
+                    <div class="face"><img src="@/assets/img/facebook.png" alt="image facebook"></div>
                 </a>
-                <a href="">
-                    <div class="twit"><img src="@/assets/img/twitter.png" alt=""></div>
+                <a href="/">
+                    <div class="twit"><img src="@/assets/img/twitter.png" alt="image twitter"></div>
                 </a>
-                <img src="@/assets/img/team2.png" alt="">
+                <img src="@/assets/img/team2.png" alt="worker">
                 <div class="text">
                     <p class="heading-10">Bayu Aji</p>
                     <p class="body-4">CBQ</p>
@@ -42,16 +42,16 @@
             </div>
 
             <div class="image-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                <a href="">
-                    <div class="Inst"><img src="@/assets/img/inst.png" alt=""></div>
+                <a href="/">
+                    <div class="Inst"><img src="@/assets/img/inst.png" alt="image inst"></div>
                 </a>
-                <a href="">
-                    <div class="face"><img src="@/assets/img/facebook.png" alt=""></div>
+                <a href="/">
+                    <div class="face"><img src="@/assets/img/facebook.png" alt="image facebook"></div>
                 </a>
-                <a href="">
-                    <div class="twit"><img src="@/assets/img/twitter.png" alt=""></div>
+                <a href="/">
+                    <div class="twit"><img src="@/assets/img/twitter.png" alt="image twitter"></div>
                 </a>
-                <img src="@/assets/img/team3.png" alt="">
+                <img src="@/assets/img/team3.png" alt="worker">
                 <div class="text">
                     <p class="heading-10">Ayung Brandon</p>
                     <p class="body-4">VRI Development</p>
@@ -59,16 +59,16 @@
             </div>
 
             <div class="image-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                <a href="">
-                    <div class="Inst"><img src="@/assets/img/inst.png" alt=""></div>
+                <a href="/">
+                    <div class="Inst"><img src="@/assets/img/inst.png" alt="image inst"></div>
                 </a>
-                <a href="">
-                    <div class="face"><img src="@/assets/img/facebook.png" alt=""></div>
+                <a href="/">
+                    <div class="face"><img src="@/assets/img/facebook.png" alt="image facebook"></div>
                 </a>
-                <a href="">
-                    <div class="twit"><img src="@/assets/img/twitter.png" alt=""></div>
+                <a href="/">
+                    <div class="twit"><img src="@/assets/img/twitter.png" alt="image twitter"></div>
                 </a>
-                <img src="@/assets/img/team5.png" alt="">
+                <img src="@/assets/img/team5.png" alt="worker">
                 <div class="text">
                     <p class="heading-10">Aldo Boy</p>
                     <p class="body-4">3D Designer</p>
@@ -76,16 +76,16 @@
             </div>
 
             <div class="image-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
-                <a href="">
-                    <div class="Inst"><img src="@/assets/img/inst.png" alt=""></div>
+                <a href="/">
+                    <div class="Inst"><img src="@/assets/img/inst.png" alt="image inst"></div>
                 </a>
-                <a href="">
-                    <div class="face"><img src="@/assets/img/facebook.png" alt=""></div>
+                <a href="/">
+                    <div class="face"><img src="@/assets/img/facebook.png" alt="image facebook"></div>
                 </a>
-                <a href="">
-                    <div class="twit"><img src="@/assets/img/twitter.png" alt=""></div>
+                <a href="/">
+                    <div class="twit"><img src="@/assets/img/twitter.png" alt="image twitter"></div>
                 </a>
-                <img src="@/assets/img/team6.png" alt="">
+                <img src="@/assets/img/team6.png" alt="worker">
                 <div class="text">
                     <p class="heading-10">Aril Laso</p>
                     <p class="body-4">UI / UX Designer</p>
@@ -93,16 +93,16 @@
             </div>
 
             <div class="image-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
-                <a href="">
-                    <div class="Inst"><img src="@/assets/img/inst.png" alt=""></div>
+                <a href="/">
+                    <div class="Inst"><img src="@/assets/img/inst.png" alt="image inst"></div>
                 </a>
-                <a href="">
-                    <div class="face"><img src="@/assets/img/facebook.png" alt=""></div>
+                <a href="/">
+                    <div class="face"><img src="@/assets/img/facebook.png" alt="image facebook"></div>
                 </a>
-                <a href="">
-                    <div class="twit"><img src="@/assets/img/twitter.png" alt=""></div>
+                <a href="/">
+                    <div class="twit"><img src="@/assets/img/twitter.png" alt="image twitter"></div>
                 </a>
-                <img src="@/assets/img/team7.png" alt="">
+                <img src="@/assets/img/team7.png" alt="worker ">
                 <div class="text">
                     <p class="heading-10">Beni Barak</p>
                     <p class="body-4">3D Artist</p>

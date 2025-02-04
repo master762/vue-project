@@ -1,12 +1,13 @@
 <template>
   <router-view />
   <ThemeSwitcher />
-  <div class="container">
-    <div class="clip"></div>
-    <header>
-      <HeaderComponent />
-    </header>
-    <main>
+
+  <div class="clip"></div>
+  <header>
+    <HeaderComponent class="container" />
+  </header>
+  <main>
+    <div class="container">
       <AdvertisingComponent />
       <BunnerComponent :showText="false" :showImages="true" />
       <EventComponent />
@@ -17,12 +18,13 @@
       <SunsustemComponent />
       <VrservicesComponent />
       <DiscoverComponent />
-      <OurarticlesComponent />
-    </main>
-    <footer>
-      <FooterComponent />
-    </footer>
-  </div>
+    </div>
+    <OurarticlesComponent />
+  </main>
+  <footer>
+    <FooterComponent class="container" />
+  </footer>
+
 </template>
 
 <script>

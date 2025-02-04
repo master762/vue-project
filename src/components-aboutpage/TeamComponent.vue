@@ -8,28 +8,28 @@
         </div>
         <div class="images">
             <div class="image-card" data-aos="fade-up" data-aos-delay="400">
-                <img src="@/assets/img/team1.png" alt="">
+                <img src="@/assets/img/team1.png" alt="worker">
                 <div class="text">
                     <p class="heading-10">Bondan Prabowo</p>
                     <p class="body-4">CEO</p>
                 </div>
             </div>
             <div class="image-card" data-aos="fade-up" data-aos-delay="600">
-                <img src="@/assets/img/team2.png" alt="">
+                <img src="@/assets/img/team2.png" alt="worker">
                 <div class="text">
                     <p class="heading-10">Bayu Aji</p>
                     <p class="body-4">CBQ</p>
                 </div>
             </div>
             <div class="image-card" data-aos="fade-up" data-aos-delay="800">
-                <img src="@/assets/img/team3.png" alt="">
+                <img src="@/assets/img/team3.png" alt="worker">
                 <div class="text">
                     <p class="heading-10">Ayung Brandon</p>
                     <p class="body-4">VRI Development</p>
                 </div>
             </div>
             <div class="image-card" data-aos="fade-up" data-aos-delay="1000">
-                <img src="@/assets/img/team4.png" alt="">
+                <img src="@/assets/img/team4.png" alt="worker">
                 <div class="text">
                     <p class="heading-10">Aril Laao</p>
                     <p class="body-4">VRI Artist</p>
@@ -132,7 +132,3 @@ section {
     margin-bottom: 152px;
 }
 </style>
-
-<script setup>
-// Скрипт не требуется, так как данные статичны
-</script>

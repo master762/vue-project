@@ -2,34 +2,37 @@
   <section>
     <div class="adaptContainer">
       <!-- заголовки, кнопка -->
-      <p class="caption-1" data-aos="fade-up">OUR ARTICLES</p>
-      <div class="flex" data-aos="fade-up" data-aos-delay="100">
-        <p class="heading-2">Stay Up-to-Date with Our VR Insights</p>
-        <button class="customBtn">
-          <span class="customTxt">SEE ALL</span>
-        </button>
+      <div class="container">
+        <p class="caption-1" data-aos="fade-up">OUR ARTICLES</p>
+        <div class="flex" data-aos="fade-up" data-aos-delay="100">
+          <p class="heading-2">Stay Up-to-Date with Our VR Insights</p>
+          <button class="customBtn">
+            <span class="customTxt">SEE ALL</span>
+          </button>
+        </div>
       </div>
-
       <div class="position">
         <!-- визуальные эллементы сзади -->
         <img class="visual" src="@/assets/img/visual.png" alt="" data-aos="fade-right" data-aos-delay="200">
         <!-- слайдер -->
-        <p class="heading-6" data-aos="fade-up" data-aos-delay="300">Popular Article</p>
-        <div class="slider" data-aos="fade-up" data-aos-delay="400">
-          <div class="slides" :style="{ transform: `translateX(-${currentSlide * 636}px)` }">
-            <img v-for="(image, index) in images" :key="index" :src="image" alt="">
+        <div class="container">
+          <p class="heading-6" data-aos="fade-up" data-aos-delay="300">Popular Article</p>
+          <div class="slider" data-aos="fade-up" data-aos-delay="400">
+            <div class="slides" :style="{ transform: `translateX(-${currentSlide * 636}px)` }">
+              <img v-for="(image, index) in images" :key="index" :src="image" alt="">
+            </div>
+            <button v-if="currentSlide > 0" @click="prevSlide" class="slider-btn prev">
+              <img src="@/assets/img/prev.png" alt="">
+            </button>
+            <button v-if="currentSlide < images.length - 1" @click="nextSlide" class="slider-btn next">
+              <img src="@/assets/img/next.png" alt="">
+            </button>
           </div>
-          <button v-if="currentSlide > 0" @click="prevSlide" class="slider-btn prev">
-            <img src="@/assets/img/prev.png" alt="">
-          </button>
-          <button v-if="currentSlide < images.length - 1" @click="nextSlide" class="slider-btn next">
-            <img src="@/assets/img/next.png" alt="">
-          </button>
-        </div>
-        <!-- индикаторы слайдов -->
-        <div class="indicators" data-aos="fade-up" data-aos-delay="500">
-          <div v-for="(image, index) in images" :key="index" class="indicator"
-            :class="{ active: currentSlide === index }"></div>
+          <!-- индикаторы слайдов -->
+          <div class="indicators" data-aos="fade-up" data-aos-delay="500">
+            <div v-for="(image, index) in images" :key="index" class="indicator"
+              :class="{ active: currentSlide === index }"></div>
+          </div>
         </div>
         <!-- скролл-блок -->
         <div class="scroll-block" data-aos="fade-up" data-aos-delay="600">
@@ -226,10 +229,11 @@
 }
 
 .scroll-block {
-  width: 65%;
+  max-width: 729px;
+  width: 100%;
   height: 605px;
   position: absolute;
-  right: -119px;
+  right: 250px;
   top: 0;
   background: var(--Black50);
   overflow-y: auto;

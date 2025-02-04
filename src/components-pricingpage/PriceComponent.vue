@@ -18,16 +18,16 @@
                         <p class="body-1">/ month</p>
                     </div>
                     <p class="custom-txt">All the basic features to boost your freelance career</p>
-                    <div class="flex"><img src="@/assets/img/accept1.png" alt="">
+                    <div class="flex"><img src="@/assets/img/accept1.png" alt="item">
                         <p class="heading-11">Access to a selection of VR games and experiences</p>
                     </div>
-                    <div class="flex"><img src="@/assets/img/accept1.png" alt="">
+                    <div class="flex"><img src="@/assets/img/accept1.png" alt="item">
                         <p class="heading-11">Limited access to educational content</p>
                     </div>
-                    <div class="flex"><img src="@/assets/img/accept1.png" alt="">
+                    <div class="flex"><img src="@/assets/img/accept1.png" alt="item">
                         <p class="heading-11">Limited access to architecture and design tools</p>
                     </div>
-                    <div class="flex"><img src="@/assets/img/accept1.png" alt="">
+                    <div class="flex"><img src="@/assets/img/accept1.png" alt="item">
                         <p class="heading-11">No access to exclusive events or promotions</p>
                     </div>
                     <button class="btn"> <span>GET 14 DAYS FREE TRIAL</span></button>
@@ -42,16 +42,16 @@
                         <p class="body-1">/ month</p>
                     </div>
                     <p class="custom-txt">All the basic features to boost your freelance career</p>
-                    <div class="flex"><img src="@/assets/img/accept1.png" alt="">
+                    <div class="flex"><img src="@/assets/img/accept1.png" alt="item">
                         <p class="heading-11">Access to a selection of VR games and experiences</p>
                     </div>
-                    <div class="flex"><img src="@/assets/img/accept1.png" alt="">
+                    <div class="flex"><img src="@/assets/img/accept1.png" alt="item">
                         <p class="heading-11">Limited access to educational content</p>
                     </div>
-                    <div class="flex"><img src="@/assets/img/accept1.png" alt="">
+                    <div class="flex"><img src="@/assets/img/accept1.png" alt="item">
                         <p class="heading-11">Limited access to architecture and design tools</p>
                     </div>
-                    <div class="flex"><img src="@/assets/img/accept1.png" alt="">
+                    <div class="flex"><img src="@/assets/img/accept1.png" alt="item">
                         <p class="heading-11">Access to exclusive events and promotionss</p>
                     </div>
                     <button class="btn"> <span>GET 14 DAYS FREE TRIAL</span></button>
@@ -66,16 +66,16 @@
                         <p class="body-1">/ month</p>
                     </div>
                     <p class="custom-txt">All the basic features to boost your freelance career</p>
-                    <div class="flex"><img src="@/assets/img/accept1.png" alt="">
+                    <div class="flex"><img src="@/assets/img/accept1.png" alt="item">
                         <p class="heading-11">Access to a selection of VR games and experiences</p>
                     </div>
-                    <div class="flex"><img src="@/assets/img/accept1.png" alt="">
+                    <div class="flex"><img src="@/assets/img/accept1.png" alt="item">
                         <p class="heading-11">Limited access to educational content</p>
                     </div>
-                    <div class="flex"><img src="@/assets/img/accept1.png" alt="">
+                    <div class="flex"><img src="@/assets/img/accept1.png" alt="item">
                         <p class="heading-11">Limited access to architecture and design tools</p>
                     </div>
-                    <div class="flex"><img src="@/assets/img/accept1.png" alt="">
+                    <div class="flex"><img src="@/assets/img/accept1.png" alt="item">
                         <p class="heading-11">Priority access to exclusive events and promotions</p>
                     </div>
                     <button class="btn"> <span>GET 14 DAYS FREE TRIAL</span></button>

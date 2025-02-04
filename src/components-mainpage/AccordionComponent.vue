@@ -25,9 +25,9 @@
 
           <!-- Фоновые изображения -->
           <div class="bg-img" data-aos="fade-left" data-aos-delay="300">
-            <img src="@/assets/img/Light4.png" alt="" />
-            <img src="@/assets/img/Image3.png" alt="" />
-            <img src="@/assets/img/Videovr2.png" alt="" />
+            <img src="@/assets/img/Light4.png" alt="background light" />
+            <img src="@/assets/img/Image3.png" alt="image" />
+            <img src="@/assets/img/Videovr2.png" alt="image" />
           </div>
         </div>
       </div>

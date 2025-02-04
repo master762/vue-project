@@ -19,9 +19,9 @@
             </div>
             <div class="right">
                 <div class="bacground" data-aos="zoom-in">
-                    <img src="@/assets/img/Image7.png" alt="" data-aos="fade-up" />
-                    <img src="@/assets/img/Light9.png" alt="" data-aos="fade-down" />
-                    <img src="@/assets/img/video3.png" alt="" data-aos="fade-left" />
+                    <img src="@/assets/img/Image7.png" alt="background image" data-aos="fade-up" />
+                    <img src="@/assets/img/Light9.png" alt="background light" data-aos="fade-down" />
+                    <img src="@/assets/img/video3.png" alt="background image" data-aos="fade-left" />
                 </div>
             </div>
         </div>

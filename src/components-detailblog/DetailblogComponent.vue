@@ -5,11 +5,11 @@
             <router-link to="/">
                 <p class="heading-10">Home</p>
             </router-link>
-            <img class="transform" src="@/assets/img/arrow.png" alt="">
+            <img class="transform" src="@/assets/img/arrow.png" alt="arrow">
             <router-link to="/Blog">
                 <p class="heading-10">Blog</p>
             </router-link>
-            <img class="transform" src="@/assets/img/arrow.png" alt="">
+            <img class="transform" src="@/assets/img/arrow.png" alt="arrow">
             <p class="body-3">Bringing Designs to Life: How VR is Changing Architecture</p>
         </div>
 
@@ -18,7 +18,7 @@
                 <p class="caption-2">VR Architecture</p>
                 <p class="heading-3">Bringing Designs to Life: How VR is Changing Architecture</p>
                 <p class="caption-1">NASYIYA ULFA | 25 NOV 2022</p>
-                <img class="mg" src="@/assets/img/Dblog.png" alt="">
+                <img class="mb" src="@/assets/img/Dblog.png" alt="image">
                 <p class="body-1">Architecture is an art and science that is constantly evolving with technology. The
                     industry has gone through various transformations over the years, from pencil and paper sketches to
                     computer-aided design (CAD) software. However, one technology that is revolutionizing architecture
@@ -39,8 +39,8 @@
                     the construction process to visualize the project's progress and identify any issues that may arise.
                 </p>
                 <div class="img-container">
-                    <img src="@/assets/img/blog5.png" alt="">
-                    <img src="@/assets/img/blog8.png" alt="">
+                    <img src="@/assets/img/blog5.png" alt="image">
+                    <img src="@/assets/img/blog8.png" alt="image">
                 </div>
                 <p class="body-1">The benefits of VR design in architecture are clear, and the technology is becoming
                     increasingly accessible and affordable. More and more architects and firms are incorporating VR
@@ -61,9 +61,9 @@
                 <p class="heading-10">Share :</p>
 
                 <div class="share" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-                    <a href=""><img src="@/assets/img/twitter.png" alt=""></a>
-                    <a href=""><img src="@/assets/img/facebook.png" alt=""></a>
-                    <a href=""><img src="@/assets/img/inst.png" alt=""></a>
+                    <a href=""><img src="@/assets/img/twitter.png" alt="twitter logo"></a>
+                    <a href=""><img src="@/assets/img/facebook.png" alt="facebook logo"></a>
+                    <a href=""><img src="@/assets/img/inst.png" alt="instagram logo"></a>
                 </div>
             </div>
 
@@ -72,7 +72,7 @@
                     <p class="heading-8">Recent Article</p>
 
                     <div class="item" data-aos="fade-up" data-aos-duration="1000">
-                        <img src="@/assets/img/blog8.png" alt="">
+                        <img src="@/assets/img/blog8.png" alt="image">
                         <div class="text">
                             <p class="caption-3">VR Education</p>
                             <p class="body-4">The Future of Education: How VR is Revolutionizing the Classroom</p>
@@ -80,7 +80,7 @@
                     </div>
 
                     <div class="item" data-aos="fade-up" data-aos-duration="1000">
-                        <img src="@/assets/img/Dblog.png" alt="">
+                        <img src="@/assets/img/Dblog.png" alt="image">
                         <div class="text">
                             <p class="caption-3">VR Architecture</p>
                             <p class="body-4">Bringing Designs to Life: How VR is Changing Architecture</p>
@@ -88,7 +88,7 @@
                     </div>
 
                     <div class="item" data-aos="fade-up" data-aos-duration="1000">
-                        <img src="@/assets/img/blog2.png" alt="">
+                        <img src="@/assets/img/blog2.png" alt="image">
                         <div class="text">
                             <p class="caption-3">VR Entertainment </p>
                             <p class="body-4">Making Events Memorable: The Power of VR for Corporate and Special
@@ -97,7 +97,7 @@
                     </div>
 
                     <div class="item" data-aos="fade-up" data-aos-duration="1000">
-                        <img src="@/assets/img/blog3.png" alt="">
+                        <img src="@/assets/img/blog3.png" alt="image">
                         <div class="text">
                             <p class="caption-3">VR Event</p>
                             <p class="body-4">Exploring New Worlds: The Benefits of VR Travel</p>
@@ -223,7 +223,7 @@
     margin-bottom: 24px;
 }
 
-.mg {
+.mb {
     margin-bottom: 30px;
 }
 

@@ -8,7 +8,7 @@
             <div class="inf" data-aos="fade-up" data-aos-delay="200">
                 <p class="caption-1">PROJECT COMPLETE</p>
                 <p class="heading-2">300k+</p>
-                <img src="@/assets/img/Bg.png" alt="">
+                <img src="@/assets/img/Bg.png" alt="background image">
             </div>
             <div class="inf" data-aos="fade-up" data-aos-delay="400">
                 <p class="caption-1">YEARS EXPERIENCE</p>

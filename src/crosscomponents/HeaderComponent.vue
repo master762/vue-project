@@ -34,7 +34,7 @@
 
         <li data-aos="fade-right" data-aos-delay="400" @click="togglePageMenu">
           <p class="navigation">Page</p>
-          <img src="@/assets/img/arrow.png" alt="" class="arrow">
+          <img src="@/assets/img/arrow.png" alt="arrow" class="arrow">
           <ul v-if="isPageMenuVisible" class="dropdown-menu">
             <router-link to="/Detailservice">
               <li>
@@ -56,7 +56,7 @@
         </li>
         <li data-aos="fade-right" data-aos-delay="500" @click="toggleBlogMenu">
           <p class="navigation">Blog</p>
-          <img src="@/assets/img/arrow.png" alt="" class="arrow">
+          <img src="@/assets/img/arrow.png" alt="arrow" class="arrow">
           <ul v-if="isBlogMenuVisible" class="dropdown-menu">
             <router-link to="/Blog">
               <li>
@@ -75,7 +75,7 @@
 
     <!-- Кнопка -->
     <div class="buttonContainer" data-aos="zoom-in-left">
-      <button class="AdaptButton"><img src="@/assets/img/btn.png"></button>
+      <button class="AdaptButton"><img src="@/assets/img/btn.png" alt="button"></button>
       <router-link to="/Contactus">
         <button class="CustomButton">
           <p class="button-2">Contact us</p>

@@ -9,9 +9,9 @@
             <p class="caption-1" data-aos="fade-down">WHY CHOOSE US</p>
             <p class="heading-2" data-aos="fade-right" data-aos-delay="100">Why Choose Us for Your VR Needs</p>
             <div class="accordion-item" v-for="(item, index) in items" :key="index">
-              <button class="accordion-header" @click="toggleAccordion(index)">
+              <button class="accordion-header" @click="openandClose(index)">
                 <span class="heading-8">{{ item.title }}</span>
-                <img src="@/assets/img/arrow.png" alt="" class="arrow" :class="{ active: item.isOpen }" />
+                <img src="@/assets/img/arrow.png" alt="arrow" class="arrow" :class="{ active: item.isOpen }" />
               </button>
               <div class="accordion-content" :class="{ open: item.isOpen }">
                 <p class="body-3">{{ item.content }}</p>
@@ -21,9 +21,9 @@
 
           <!-- Фоновые изображения -->
           <div class="bg-img" data-aos="fade-left" data-aos-delay="300">
-            <img src="@/assets/img/light10.png" alt="" />
-            <img src="@/assets/img/image8.png" alt="" />
-            <img src="@/assets/img/video4.png" alt="" />
+            <img src="@/assets/img/light10.png" alt="bacground light" />
+            <img src="@/assets/img/image8.png" alt="bacground image" />
+            <img src="@/assets/img/video4.png" alt="bacground image" />
           </div>
         </div>
       </div>
@@ -216,7 +216,7 @@ const items = ref([
   },
 ]);
 
-const toggleAccordion = (index) => {
+const openandClose = (index) => {
   items.value.forEach((item, i) => {
     if (i === index) {
       item.isOpen = !item.isOpen;

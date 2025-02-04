@@ -22,6 +22,7 @@ export default {
 </script>
 <style>
 /* общее */
+
 body {
   margin: 0;
   padding: 0;
@@ -39,6 +40,11 @@ body.light-theme {
   --Grey2: #2a2a2a;
   --White: #000000;
 
+}
+
+header {
+  position: relative;
+  z-index: 1;
 }
 
 a {

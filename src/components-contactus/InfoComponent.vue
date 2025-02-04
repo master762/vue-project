@@ -2,7 +2,7 @@
     <section>
         <div class="items">
             <a class="item" href="mailto:Support@VRNas.com" target="_blank" data-aos="fade-up" data-aos-duration="1000">
-                <img src="@/assets/img/email.png" alt="">
+                <img src="@/assets/img/email.png" alt="email logo">
                 <div class="text">
                     <p class="caption-1">EMAIL</p>
                 </div>
@@ -11,7 +11,7 @@
 
             <a href="https://www.google.ru/maps/@-0.022861,109.3290922,182m/data=!3m1!1e3?hl=ru&entry=ttu&g_ep=EgoyMDI1MDEyOC4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank" class="item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                <img src="@/assets/img/address.png" alt="">
+                <img src="@/assets/img/address.png" alt="address logo">
                 <div class="text">
                     <p class="caption-1">ADDRESS</p>
                 </div>
@@ -20,7 +20,7 @@
 
             <a class="item" href="tel:+123 456 7890" target="_blank" data-aos="fade-up" data-aos-duration="1000"
                 data-aos-delay="400">
-                <img src="@/assets/img/phone.png" alt="">
+                <img src="@/assets/img/phone.png" alt="phone logo">
                 <div class="text">
                     <p class="caption-1">PHONE</p>
                 </div>

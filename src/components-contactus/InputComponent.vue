@@ -1,25 +1,26 @@
 <template>
     <section>
         <div class="input-container" data-aos="fade-up">
-            <p class="caption-1" data-aos="fade-left">КОНТАКТЫ</p>
-            <p class="heading-2" data-aos="fade-left" data-aos-delay="200">Свяжитесь с нами</p>
-            <p class="body-1" data-aos="fade-left" data-aos-delay="400">В VRNas мы всегда рады услышать от наших
-                клиентов и потенциальных клиентов...</p>
+            <p class="caption-1" data-aos="fade-left">CONTACT US</p>
+            <p class="heading-2" data-aos="fade-left" data-aos-delay="200">Get in Touch</p>
+            <p class="body-1" data-aos="fade-left" data-aos-delay="400">At VRNas, we're always happy to hear from our
+                clients and potential clients. Whether you have a question about our VR services, want to discuss a
+                potential project, or just want to say hello, we're here to help.</p>
 
             <div class="input-group" data-aos="fade-right">
-                <input type="text" placeholder="Имя" v-model="firstName" />
-                <input type="text" placeholder="Фамилия" v-model="lastName" />
+                <input type="text" placeholder="First Name" v-model="firstName" />
+                <input type="text" placeholder="Last Name" v-model="lastName" />
             </div>
             <div class="input-group" data-aos="fade-right">
                 <input type="email" placeholder="Email" v-model="email" />
-                <input type="tel" placeholder="Телефон" v-model="phone" />
+                <input type="tel" placeholder="Phone Number" v-model="phone" />
             </div>
-            <textarea placeholder="Сообщение" v-model="message" data-aos="fade-up"></textarea>
+            <textarea placeholder="Message" v-model="message" data-aos="fade-up"></textarea>
 
             <p v-if="errorMessage" class="error-message">{{ errorMessage }}</p>
         </div>
         <div class="btn" data-aos="zoom-in">
-            <button @click="send"> <span class="button-1">Отправить сообщение</span></button>
+            <button @click="send"> <span class="button-1">SEND</span></button>
         </div>
     </section>
 </template>

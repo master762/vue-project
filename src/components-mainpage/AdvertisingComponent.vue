@@ -8,7 +8,7 @@
         <button>
           <span class="button-1">DISCOVER MORE</span>
         </button>
-        <img data-aos="fade" class="positionVideo" src="@/assets/img/Video.png" alt="">
+        <img data-aos="fade" class="positionVideo" src="@/assets/img/Video.png" alt="image">
       </div>
       <div class="clients" data-aos="fade-right">
         <div class="clients-img">
@@ -19,12 +19,12 @@
         <div class="clients-text">
           <div class="position">
             <p class="clients-count">32k+</p>
-            <img src="@/assets/img/Element.png" alt="">
+            <img src="@/assets/img/Element.png" alt="image item">
           </div>
           <p class="clients-description">Happy Client</p>
         </div>
       </div>
-      <img class="positionDecoration" src="@/assets/img/Assets.png" alt="">
+      <img class="positionDecoration" src="@/assets/img/Assets.png" alt="background image">
     </div>
   </section>
 </template>

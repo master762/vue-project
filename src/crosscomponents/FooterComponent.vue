@@ -27,10 +27,10 @@
           </router-link>
           <!-- социальные сети, логотипы -->
           <div class="social" data-aos="fade-up" data-aos-delay="300">
-            <a href="/" target="_blank"><img src="@/assets/img/social.png" alt="" /></a>
-            <a href="/" target="_blank"><img src="@/assets/img/social1.png" alt="" /></a>
-            <a href="/" target="_blank"><img src="@/assets/img/social2.png" alt="" /></a>
-            <a href="/" target="_blank"><img src="@/assets/img/social3.png" alt="" /></a>
+            <a href="/" target="_blank"><img src="@/assets/img/social.png" alt="twitter" /></a>
+            <a href="/" target="_blank"><img src="@/assets/img/social1.png" alt="facebook" /></a>
+            <a href="/" target="_blank"><img src="@/assets/img/social2.png" alt="instagram" /></a>
+            <a href="/" target="_blank"><img src="@/assets/img/social3.png" alt="github" /></a>
           </div>
         </div>
         <div class="right">
@@ -87,11 +87,11 @@
             </a>
 
             <a href="mailto:Support@VRNas.com" target="_blank">
-              <p class="custom-text"> <img src="@/assets/img/help1.png" alt="" /> Support@VRNas.com</p>
+              <p class="custom-text"> <img src="@/assets/img/help1.png" alt="item" /> Support@VRNas.com</p>
             </a>
 
             <a href="tel:+123 456 7890" target="_blank">
-              <p class="custom-text"> <img src="@/assets/img/help2.png" alt="" /> +123 456 7890</p>
+              <p class="custom-text"> <img src="@/assets/img/help2.png" alt="item" /> +123 456 7890</p>
             </a>
           </div>
         </div>

@@ -13,8 +13,8 @@
       <canvas ref="canvas" class="canvas-layer" @click="onCanvasClick"></canvas>
 
       <!-- Центральные элементы -->
-      <img class="ellipse-light" src="@/assets/img/Light5.png" alt="">
-      <img class="ellipse-img" src="@/assets/img/Image5.png" alt="">
+      <img class="ellipse-light" src="@/assets/img/Light5.png" alt="background light">
+      <img class="ellipse-img" src="@/assets/img/Image5.png" alt="background image">
       <div class="text-container">
         <p class="caption-1">TESTIMONIAL</p>
         <p class="heading-2">What Our Clients Are Saying</p>

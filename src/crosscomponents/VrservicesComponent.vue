@@ -11,11 +11,12 @@
       </p>
       <div class="components" data-aos="fade-in" data-aos-duration="1500">
         <div class="bacground">
-          <img class="man" src="@/assets/img/Image7.png" alt="" data-aos="zoom-in" data-aos-delay="800" />
+          <img class="man" src="@/assets/img/Image7.png" alt="background image" data-aos="zoom-in"
+            data-aos-delay="800" />
           <div class="text">
             <!-- Основной текст -->
             <div class="imageandtextblock" data-aos="fade-right" data-aos-delay="200">
-              <img src="@/assets/img/IconCloud.png" alt="" />
+              <img src="@/assets/img/IconCloud.png" alt="icon" />
               <div>
                 <p class="heading-9">Customizable Packages</p>
                 <p class="body-3">
@@ -26,7 +27,7 @@
               </div>
             </div>
             <div class="imageandtextblock" data-aos="fade-right" data-aos-delay="400">
-              <img src="@/assets/img/IconCloud.png" alt="" />
+              <img src="@/assets/img/IconCloud.png" alt="icon" />
               <div>
                 <p class="heading-9">Flexible Payment Options</p>
                 <p class="body-3">
@@ -36,7 +37,7 @@
               </div>
             </div>
             <div class="imageandtextblock" data-aos="fade-right" data-aos-delay="600">
-              <img src="@/assets/img/IconCloud.png" alt="" />
+              <img src="@/assets/img/IconCloud.png" alt="icon" />
               <div>
                 <p class="heading-9">Satisfaction Guarantee</p>
                 <p class="body-3">

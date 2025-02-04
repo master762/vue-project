@@ -37,8 +37,8 @@
                     </RouterLink>
                 </div>
                 <div class="ellipse">
-                    <img class="ellipse-light" src="@/assets/img/Light5.png" alt="">
-                    <img class="ellipse-img" src="@/assets/img/Image5.png" alt="">
+                    <img class="ellipse-light" src="@/assets/img/Light5.png" alt="background light">
+                    <img class="ellipse-img" src="@/assets/img/Image5.png" alt="image">
 
                 </div>
             </div>

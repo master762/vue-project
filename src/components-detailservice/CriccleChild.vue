@@ -1,60 +1,47 @@
 <template>
     <div class="content">
-        <div class="title-container" data-aos="fade-up">
+        <div class="title-container">
             <p class="caption-1">SERVICE</p>
-            <p class="custom-title">VR Design</p>
+            <p class="custom-title">{{ content.title }}</p>
         </div>
-        <p class="body-1" style="margin-bottom: 38px;" data-aos="fade-up" data-aos-delay="300">
-            At our VR design service, we specialize in creating immersive and engaging virtual reality experiences that
-            transport your audience to a whole new world. Our team of experienced designers and developers work together
-            to create VR experiences that are not only visually stunning but also interactive and user-friendly.
+
+        <p class="body-1" style="margin-bottom: 38px;">
+            {{ content.bodyTop1 }}
         </p>
-        <p class="body-1" data-aos="fade-up" data-aos-delay="400">
-            We take a collaborative approach to our VR design process, working closely with you to understand your
-            specific needs and goals. Whether you're looking to create a VR training program, a marketing campaign, or a
-            game, we can help you bring your ideas to life.
+        <p class="body-1">
+            {{ content.bodyTop2 }}
         </p>
+
         <div class="points">
-            <p class="body-3" style="margin-bottom: 24px;" data-aos="fade-up" data-aos-delay="500">Our VR design
-                services include:</p>
-            <div class="flex" data-aos="fade-up" data-aos-delay="600">
-                <img src="@/assets/img/accept.png" alt="">
-                <p class="body-3">Concept development and ideation</p>
-            </div>
-            <div class="flex" data-aos="fade-up" data-aos-delay="700">
-                <img src="@/assets/img/accept.png" alt="">
-                <p class="body-3">Storyboarding and scriptwriting</p>
-            </div>
-            <div class="flex" data-aos="fade-up" data-aos-delay="800">
-                <img src="@/assets/img/accept.png" alt="">
-                <p class="body-3">3D modeling and animation</p>
-            </div>
-            <div class="flex" data-aos="fade-up" data-aos-delay="900">
-                <img src="@/assets/img/accept.png" alt="">
-                <p class="body-3">User interface design and development</p>
-            </div>
-            <div class="flex" data-aos="fade-up" data-aos-delay="1000">
-                <img src="@/assets/img/accept.png" alt="">
-                <p class="body-3">Sound design and effects</p>
-            </div>
-            <div class="flex" data-aos="fade-up" data-aos-delay="1100">
-                <img src="@/assets/img/accept.png" alt="">
-                <p class="body-3">Quality assurance testing and optimization</p>
+            <p class="body-3" style="margin-bottom: 24px;" data-aos="fade-up" data-aos-delay="500">
+                {{ content.backgroundTitle }}
+            </p>
+            <div v-for="(service, index) in content.services" :key="index" class="flex">
+                <img src="@/assets/img/accept.png" alt="image item">
+                <p class="body-3">{{ service }}</p>
             </div>
         </div>
-        <p class="body-1" style="margin-bottom: 38px;" data-aos="fade-up" data-aos-delay="1200">
-            We use the latest VR technologies and software to create immersive experiences that are fully customized to
-            your brand and message. We understand that every project is unique, and we work closely with you to ensure
-            that we create a VR experience that perfectly matches your vision.
+
+        <p class="body-1" style="margin-bottom: 38px;">
+            {{ content.bodyBottom1 }}
         </p>
-        <p class="body-1" data-aos="fade-up" data-aos-delay="1300">
-            At our VR design service, we are committed to delivering high-quality VR experiences that engage, educate,
-            and inspire your audience. Contact us today to discuss how we can help bring your ideas to life with our VR
-            design services.
+        <p class="body-1">
+            {{ content.bodyBottom2 }}
         </p>
-        <button class="custom-btn" data-aos="fade-up" data-aos-delay="1400"><span>CONTACT US</span></button>
+
+        <button class="custom-btn">
+            <span>CONTACT US</span>
+        </button>
     </div>
 </template>
+
+<script setup>
+defineProps({
+    content: Object
+});
+</script>
+
+
 
 
 

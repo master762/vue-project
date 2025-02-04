@@ -8,13 +8,13 @@
         <div class="ellipses-container">
             <div class="ellipse ellipse-1">
                 <!-- компании -->
-                <div class="company"><img src="@/assets/img/company1.png" alt=""></div>
-                <div class="company"><img src="@/assets/img/company2.png" alt=""></div>
-                <div class="company"><img src="@/assets/img/company3.png" alt=""></div>
-                <div class="company"><img src="@/assets/img/company4.png" alt=""></div>
-                <div class="company"><img src="@/assets/img/company5.png" alt=""></div>
-                <div class="company"><img src="@/assets/img/company6.png" alt=""></div>
-                <div class="company"><img src="@/assets/img/company7.png" alt=""></div>
+                <div class="company"><img src="@/assets/img/company1.png" alt="company logo"></div>
+                <div class="company"><img src="@/assets/img/company2.png" alt="company logo"></div>
+                <div class="company"><img src="@/assets/img/company3.png" alt="company logo"></div>
+                <div class="company"><img src="@/assets/img/company4.png" alt="company logo"></div>
+                <div class="company"><img src="@/assets/img/company5.png" alt="company logo"></div>
+                <div class="company"><img src="@/assets/img/company6.png" alt="company logo"></div>
+                <div class="company"><img src="@/assets/img/company7.png" alt="company logo"></div>
             </div>
             <div class="ellipse ellipse-2"></div>
             <div class="ellipse ellipse-3"></div>
@@ -22,8 +22,8 @@
             <div class="ellipse ellipse-5"></div>
 
             <!-- Центральные элементы -->
-            <img class="ellipse-light" src="@/assets/img/Light5.png" alt="">
-            <img class="ellipse-img" src="@/assets/img/Image6.png" alt="">
+            <img class="ellipse-light" src="@/assets/img/Light5.png" alt="background light">
+            <img class="ellipse-img" src="@/assets/img/Image6.png" alt="background image">
         </div>
     </section>
 </template>

@@ -4,9 +4,9 @@
       <div class="flex">
         <!-- левая часть -->
         <div class="bg-img" data-aos="zoom-in">
-          <img src="@/assets/img/Light2.png" alt="" data-aos="fade-down" data-aos-delay="200">
-          <img src="@/assets/img/Image2.png" alt="" data-aos="fade-up" data-aos-delay="400">
-          <img src="@/assets/img/Videovr.png" alt="" data-aos="fade-left" data-aos-delay="600">
+          <img src="@/assets/img/Light2.png" alt="background light" data-aos="fade-down" data-aos-delay="200">
+          <img src="@/assets/img/Image2.png" alt="image" data-aos="fade-up" data-aos-delay="400">
+          <img src="@/assets/img/Videovr.png" alt="image" data-aos="fade-left" data-aos-delay="600">
         </div>
         <!-- правая часть -->
         <div class="sectionDescription" data-aos="fade-right">
@@ -18,15 +18,15 @@
             new ways, and experience events in a whole new light.
           </p>
           <div class="advantages" data-aos="fade-up" data-aos-delay="200">
-            <img src="@/assets/img/accept.png" alt="">
+            <img src="@/assets/img/accept.png" alt="image item">
             <p class="body-3">Cutting-Edge Technology</p>
           </div>
           <div class="advantages" data-aos="fade-up" data-aos-delay="400">
-            <img src="@/assets/img/accept.png" alt="">
+            <img src="@/assets/img/accept.png" alt="image item">
             <p class="body-3">Versatile Applications</p>
           </div>
           <div class="advantages" data-aos="fade-up" data-aos-delay="600">
-            <img src="@/assets/img/accept.png" alt="">
+            <img src="@/assets/img/accept.png" alt="image item">
             <p class="body-3">Affordable and Accessible</p>
           </div>
           <button data-aos="zoom-in" data-aos-delay="800">
