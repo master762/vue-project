@@ -8,19 +8,31 @@
                 potential project, or just want to say hello, we're here to help.</p>
 
             <div class="input-group" data-aos="fade-right">
-                <input type="text" placeholder="First Name" v-model="firstName" />
-                <input type="text" placeholder="Last Name" v-model="lastName" />
+                <div class="input-wrapper">
+                    <input type="text" v-model="firstName" id="firstName" required />
+                    <label for="firstName" class="user-label">First Name</label>
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" v-model="lastName" id="lastName" required />
+                    <label for="lastName" class="user-label">Last Name</label>
+                </div>
             </div>
             <div class="input-group" data-aos="fade-right">
-                <input type="email" placeholder="Email" v-model="email" />
-                <input type="tel" placeholder="Phone Number" v-model="phone" />
+                <div class="input-wrapper">
+                    <input type="email" v-model="email" id="email" required />
+                    <label for="email" class="user-label">Email</label>
+                </div>
+                <div class="input-wrapper">
+                    <input type="tel" v-model="phone" id="phone" required />
+                    <label for="phone" class="user-label">Phone Number</label>
+                </div>
             </div>
             <textarea placeholder="Message" v-model="message" data-aos="fade-up"></textarea>
 
             <p v-if="errorMessage" class="error-message">{{ errorMessage }}</p>
         </div>
         <div class="btn" data-aos="zoom-in">
-            <button @click="send"> <span class="button-1">SEND</span></button>
+            <button @click="send"><span class="button-1">SEND</span></button>
         </div>
     </section>
 </template>
@@ -36,7 +48,6 @@
     background-image: var(--linear);
     background-clip: text;
     -webkit-background-clip: text;
-    /* Для поддержки в Safari */
     color: transparent;
     display: inline-block;
 }
@@ -51,13 +62,15 @@
     margin-bottom: 32px;
 }
 
-
-
-
 .input-group {
     display: flex;
     gap: 33px;
     margin-bottom: 24px;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
 }
 
 input,
@@ -81,13 +94,30 @@ textarea {
     resize: none;
 }
 
+.user-label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--Grey2);
+    pointer-events: none;
+    transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1), color 150ms cubic-bezier(0.4, 0, 0.2, 1), background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input:focus~.user-label,
+input:valid~.user-label {
+    transform: translateY(-140%) scale(0.8);
+    padding: 0 0.2em;
+    color: #f3219c;
+}
+
 button {
     max-width: 198px;
     width: 100%;
     height: 50px;
     background: var(--linear);
     background-size: 200%;
-    animation: gradient 3s linear infinite
+    animation: gradient 3s linear infinite;
 }
 
 .btn {
@@ -100,6 +130,7 @@ button {
     color: var(--White);
 }
 </style>
+
 <script setup>
 import { ref } from 'vue';
 
@@ -114,7 +145,7 @@ const send = () => {
         lastName: lastName.value,
         email: email.value,
         phone: phone.value,
-        message: message.value
+        message: message.value,
     });
     firstName.value = '';
     lastName.value = '';
@@ -122,5 +153,4 @@ const send = () => {
     phone.value = '';
     message.value = '';
 };
-
 </script>

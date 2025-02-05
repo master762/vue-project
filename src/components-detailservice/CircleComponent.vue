@@ -7,9 +7,9 @@
 
         <div class="ellipses-container">
             <div class="ellipse ellipse-1">
-                <div v-for="(content, key) in vrContents" :key="key" class="company" @click="selectedContent = content"
-                    :class="{ active: selectedContent === content }">
-                    <p class="heading-12">VR <br>{{ key }}</p>
+                <div v-for="content in vrContentsArr" :key="content.id" class="company"
+                    @click="selectedContent = content" :class="{ active: selectedContent.id === content.id }">
+                    <p class="heading-12">{{ content.title }}</p>
 
                 </div>
             </div>
@@ -69,7 +69,7 @@ const vrContents = {
     Events: {
         title: 'VR Events',
         bodyTop1: 'Our VR event services offer immersive experiences that transform ordinary gatherings into extraordinary digital engagements. Whether it’s a corporate event, conference, or concert, we bring virtual reality to life.',
-        bodyTop2: 'We collaborate closely with clients to design custom VR events that maximize engagement and provide an unforgettable experience for attendees, no matter where they are in the world.',
+        bodyTop2: 'We collaborate closely with clients to design custom VR events that maximize engagement and provide an unforgettablettableble experience for attendees, no matter where they are in the world.',
         backgroundTitle: 'Our VR event services include:',
         services: [
             'Virtual event planning and execution',
@@ -120,7 +120,7 @@ const vrContents = {
     Entertainment: {
         title: 'VR Entertainment',
         bodyTop1: 'Our VR entertainment solutions provide users with unforgettable experiences, from virtual theme parks to interactive storytelling and cinematic adventures.',
-        bodyTop2: 'We create engaging VR content that captivates audiences and enhances immersion through high-quality visuals, sound, and interactive elements.',
+        bodyTop2: 'We create engaging VR content that captivates audiences and enhances immersi on through high-quality visuals, sound, and interactive elements.',
         backgroundTitle: 'Our VR entertainment services include:',
         services: [
             'VR theme park and ride development',
@@ -152,7 +152,137 @@ const vrContents = {
 };
 
 
-const selectedContent = ref(vrContents.Design);
+const vrContentsArr = [
+    {
+        id: 1,
+        title: 'VR Development',
+        bodyTop1: 'Our VR development services focus on building immersive applications for training, simulation, and entertainment. We help businesses leverage virtual reality to enhance engagement and efficiency.',
+        bodyTop2: 'By integrating cutting-edge technology and innovative design, we create VR applications tailored to industry-specific needs, ensuring seamless user experiences.',
+        backgroundTitle: 'Our VR development services include:',
+        services: [
+            'Custom VR application development',
+            'VR software integration with existing systems',
+            'Cross-platform VR deployment',
+            'AR/VR mixed reality solutions',
+            'VR data visualization and analysis',
+            'Performance optimization and debugging'
+        ],
+        bodyBottom1: 'We work with various VR platforms and frameworks to develop solutions that meet the unique challenges of different industries, from healthcare to education and beyond.',
+        bodyBottom2: 'If you’re looking for expert VR development, we’re ready to help bring your vision to reality with customized, scalable, and engaging virtual experiences.'
+    },
+    {
+        id: 2,
+        title: 'VR Games',
+        bodyTop1: 'Our VR game development services focus on creating engaging and highly immersive experiences for players of all skill levels. We design unique worlds that push the boundaries of interactive entertainment.',
+        bodyTop2: 'From concept to completion, we work with our clients to develop VR games that captivate audiences, combining stunning graphics, intuitive mechanics, and lifelike environments.',
+        backgroundTitle: 'Our VR game services include:',
+        services: [
+            'Concept design and storytelling',
+            '3D modeling and environment creation',
+            'Realistic physics and mechanics development',
+            'Multi-platform VR game deployment',
+            'AI-driven enemy and NPC interactions',
+            'Game testing and performance optimization'
+        ],
+        bodyBottom1: 'Our developers use advanced game engines and the latest VR technology to create smooth and highly interactive gaming experiences that transport players into virtual worlds.',
+        bodyBottom2: 'Whether you need a fully developed game or just help with a specific aspect, we’re here to bring your VR gaming ideas to life. Let’s build the next big hit together.'
+    },
+    {
+        id: 3,
+        title: 'VR Events',
+        bodyTop1: 'Our VR event services offer immersive experiences that transform ordinary gatherings into extraordinary digital engagements. Whether it’s a corporate event, conference, or concert, we bring virtual reality to life.',
+        bodyTop2: 'We collaborate closely with clients to design custom VR events that maximize engagement and provide an unforgettable experience for attendees, no matter where they are in the world.',
+        backgroundTitle: 'Our VR event services include:',
+        services: [
+            'Virtual event planning and execution',
+            'Live streaming in VR environments',
+            '3D venue creation and customization',
+            'Interactive audience engagement tools',
+            'Real-time networking and communication',
+            'Post-event analytics and insights'
+        ],
+        bodyBottom1: 'We leverage cutting-edge technology to create virtual events that feel just as real and interactive as in-person experiences. Our solutions ensure seamless integration with various platforms and devices.',
+        bodyBottom2: 'Whether you want to host a VR trade show, a business summit, or a concert, our team is ready to turn your vision into reality. Contact us to start planning your immersive VR event today.'
+    },
+    {
+        id: 4,
+        title: 'VR Design',
+        bodyTop1: 'At our VR design service, we specialize in creating immersive and engaging virtual reality experiences that transport your audience to a whole new world. Our team of experienced designers and developers work together to create VR experiences that are not only visually stunning but also interactive and user-friendly.',
+        bodyTop2: 'We take a collaborative approach to our VR design process, working closely with you to understand your specific needs and goals. Whether you’re looking to create a VR training program, a marketing campaign, or a game, we can help you bring your ideas to life.',
+        backgroundTitle: 'Our VR design services include:',
+        services: [
+            'Concept development and ideation',
+            'Storyboarding and scriptwriting',
+            '3D modeling and animation',
+            'User interface design and development',
+            'Sound design and effects',
+            'Quality assurance testing and optimization'
+        ],
+        bodyBottom1: 'We use the latest VR technologies and software to create immersive experiences that are fully customized to your brand and message. We understand that every project is unique, and we work closely with you to ensure that we create a VR experience that perfectly matches your vision.',
+        bodyBottom2: 'At our VR design service, we are committed to delivering high-quality VR experiences that engage, educate, and inspire your audience. Contact us today to discuss how we can help bring your ideas to life with our VR design services.'
+    },
+
+    {
+        id: 5,
+        title: 'VR Consulting',
+        bodyTop1: 'Our VR consulting services help businesses navigate the complex world of virtual reality, providing expert guidance on VR strategy, technology selection, and implementation.',
+        bodyTop2: 'We work with companies of all sizes to develop tailored VR solutions that align with their business goals and enhance user engagement.',
+        backgroundTitle: 'Our VR consulting services include:',
+        services: [
+            'VR strategy development and planning',
+            'Technology and hardware recommendations',
+            'User experience and interface design consulting',
+            'VR training and implement ation guidance',
+            'Cost analysis and ROI evaluation',
+            'Support and ongoing optimization'
+        ],
+        bodyBottom1: 'Our experienced consultants help businesses integrate VR solutions efficiently, ensuring they maximize their investment in virtual reality technology.',
+        bodyBottom2: 'Whether you need help launching a VR product or optimizing an existing one, our team is here to provide expert advice and guidance. Let’s explore the potential of VR together.'
+    },
+
+    {
+        id: 6,
+        title: 'VR Entertainment',
+        bodyTop1: 'Our VR entertainment solutions provide users with unforgettable experiences, from virtual theme parks to interactive storytelling and cinematic adventures.',
+        bodyTop2: 'We create engaging VR content that captivates audiences and enhances immersion through high-quality visuals, sound, and interactive elements.',
+        backgroundTitle: 'Our VR entertainment services include:',
+        services: [
+            'VR theme park and ride development',
+            'Interactive storytelling and cinematic VR',
+            'Live VR performances and concerts',
+            'Virtual reality escape rooms',
+            'Immersive brand experiences',
+            'VR content production and distribution'
+        ],
+        bodyBottom1: 'Our team blends creativity with technology to design entertainment experiences that push the boundaries of digital storytelling and audience interaction.',
+        bodyBottom2: 'Whether you’re looking to create a virtual attraction, a new interactive experience, or an entertainment-focused VR app, we can bring your ideas to life.'
+    },
+
+    {
+        id: 7,
+        title: 'VR Testimony',
+        bodyTop1: 'VR testimony services use virtual reality to create realistic and immersive simulations for legal, educational, and investigative purposes.',
+        bodyTop2: 'We help organizations utilize VR to enhance presentations, reconstructions, and storytelling in ways that traditional media cannot.',
+        backgroundTitle: 'Our VR testimony services include:',
+        services: [
+            'Crime scene reconstruction',
+            'Virtual courtroom simulations',
+            'Immersive historical recreations',
+            'VR-based training for legal professionals',
+            'Interactive jury education tools',
+            'Evidence visualization in VR'
+        ],
+        bodyBottom1: 'By leveraging VR, we enable legal teams, educators, and researchers to present information in a way that is both engaging and highly impactful.',
+        bodyBottom2: 'If you need immersive VR solutions for legal, historical, or training purposes, we have the expertise to create effective and accurate virtual testimonies.'
+    }
+
+
+
+
+]
+
+
+const selectedContent = ref(vrContents.Design); 
 </script>
 
 
@@ -161,6 +291,7 @@ const selectedContent = ref(vrContents.Design);
 .heading-12 {
     color: var(--White);
     text-align: center;
+    word-spacing: 100px;
 }
 
 .caption-1 {
@@ -241,6 +372,7 @@ const selectedContent = ref(vrContents.Design);
     align-items: center;
     position: absolute;
     pointer-events: auto;
+    cursor: pointer;
 }
 
 .company:nth-child(1) {
@@ -497,6 +629,8 @@ const selectedContent = ref(vrContents.Design);
 
     .company:nth-child(1) {
         top: 150px;
+
+
         left: 5px;
     }
 
