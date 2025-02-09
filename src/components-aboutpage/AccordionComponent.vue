@@ -1,30 +1,28 @@
 <template>
   <section>
-    <div class="adaptContainer">
-      <div class="elements">
-        <div class="grid">
-          <!-- Аккордион -->
-          <div class="accordion" data-aos="fade-up" data-aos-delay="200">
-            <!-- Заголовок -->
-            <p class="caption-1" data-aos="fade-down">WHY CHOOSE US</p>
-            <p class="heading-2" data-aos="fade-right" data-aos-delay="100">Why Choose Us for Your VR Needs</p>
-            <div class="accordion-item" v-for="(item, index) in items" :key="index">
-              <button class="accordion-header" @click="openandClose(index)">
-                <span class="heading-8">{{ item.title }}</span>
-                <img src="@/assets/img/arrow.png" alt="arrow" class="arrow" :class="{ active: item.isOpen }" />
-              </button>
-              <div class="accordion-content" :class="{ open: item.isOpen }">
-                <p class="body-3">{{ item.content }}</p>
-              </div>
+    <div class="elements">
+      <div class="grid">
+        <!-- Аккордион -->
+        <div class="accordion" data-aos="fade-up" data-aos-delay="200">
+          <!-- Заголовок -->
+          <p class="caption-1" data-aos="fade-down">WHY CHOOSE US</p>
+          <p class="heading-2" data-aos="fade-right" data-aos-delay="100">Why Choose Us for Your VR Needs</p>
+          <div class="accordion-item" v-for="(item, index) in items" :key="index">
+            <button class="accordion-header" @click="openandClose(index)">
+              <span class="heading-8">{{ item.title }}</span>
+              <img src="@/assets/img/arrow.png" alt="arrow" class="arrow" :class="{ active: item.isOpen }" />
+            </button>
+            <div class="accordion-content" :class="{ open: item.isOpen }">
+              <p class="body-3">{{ item.content }}</p>
             </div>
           </div>
+        </div>
 
-          <!-- Фоновые изображения -->
-          <div class="bg-img" data-aos="fade-left" data-aos-delay="300">
-            <img src="@/assets/img/light10.png" alt="bacground light" />
-            <img src="@/assets/img/image8.png" alt="bacground image" />
-            <img src="@/assets/img/video4.png" alt="bacground image" />
-          </div>
+        <!-- Фоновые изображения -->
+        <div class="bg-img" data-aos="fade-left" data-aos-delay="300">
+          <img src="@/assets/img/light10.png" alt="bacground light" />
+          <img src="@/assets/img/image8.png" alt="bacground image" />
+          <img src="@/assets/img/video4.png" alt="bacground image" />
         </div>
       </div>
     </div>
@@ -151,7 +149,7 @@
     overflow-x: clip;
   }
 
-  .adaptContainer {
+  section {
     width: 90%;
     margin: 0 auto;
   }

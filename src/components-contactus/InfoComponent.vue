@@ -76,4 +76,40 @@ img {
 .item:hover {
     transform: scale(1.05);
 }
+
+@media(max-width:1250px) {
+
+    section {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1252px) {
+    .items {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 860px) {
+    .item {
+        max-width: 235px;
+    }
+}
+
+@media (max-width: 810px) {
+    .items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        max-width: 100%;
+
+    }
+}
+
+@media (max-width: 650px) {}
+
+@media (max-width: 430px) {}
 </style>

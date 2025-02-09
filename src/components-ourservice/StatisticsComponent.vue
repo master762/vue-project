@@ -23,20 +23,18 @@
 .flex {
     display: flex;
     text-align: center;
+    justify-content: space-between;
 }
 
 .inf {
-    flex: 1;
+    width: fit-content;
 }
 
 .inf:nth-child(2) {
     position: relative;
 }
 
-.inf:nth-child(2) {
-    margin-left: 200px;
-    margin-right: 200px;
-}
+
 
 .caption-1 {
     background-image: var(--linear);
@@ -49,6 +47,7 @@
 
 section {
     margin-top: 150px;
+    overflow-x: clip;
 }
 
 .heading-2 {
@@ -61,5 +60,22 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
+}
+
+@media(max-width:1250px) {
+
+    section {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:650px) {
+
+    .flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 36px;
+    }
 }
 </style>

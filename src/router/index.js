@@ -10,7 +10,8 @@ import Ourteam from '../pages/Ourteampage.vue'
 import ContactusPage from '@/pages/ContactusPage.vue'
 import FaqPage from '@/pages/FaqPage.vue'
 import NotFoundPage from '@/pages/NotfoundPage.vue'
-
+import ConditionsPage from '../pages/ConditionsPage.vue'
+import PolicyPage from '../pages/PolicyPage.vue'
 const routes = [
   {
     path: '/',
@@ -61,6 +62,16 @@ const routes = [
     path: '/Faq',
     name: 'Faq',
     component: FaqPage,
+  },
+  {
+    path: '/Conditions',
+    name: 'Conditions',
+    component: ConditionsPage,
+  },
+  {
+    path: '/Policy',
+    name: 'Policy',
+    component: PolicyPage,
   },
   {
     path: '/:pathMatch(.*)*',

@@ -4,14 +4,18 @@
             <div class="bg-img" data-aos="fade-in"></div>
             <div class="left" data-aos="fade-up">
                 <p class="custom-text" data-aos="fade-up" data-aos-delay="200">ABOUT US</p>
-                <p class="heading-2" data-aos="fade-up" data-aos-delay="400">Bringing Your Vision to Life: Learn About
+                <p class="heading-2" data-aos="fade-up" data-aos-delay="400">Bringing Your Vision to Life: Learn
+                    About
                     VRNas</p>
-                <p class="body-1" data-aos="fade-up" data-aos-delay="600">VRNas is a leading provider of VR services for
+                <p class="body-1" data-aos="fade-up" data-aos-delay="600">VRNas is a leading provider of VR services
+                    for
                     education, entertainment, architecture,
                     and events. Our mission is to bring the power of virtual reality to everyone, allowing them to
                     explore new worlds, learn in new ways, and experience events in a whole new light.
-                    Our team consists of experienced VR developers, designers, and technicians who are passionate about
-                    VR and dedicated to delivering the highest quality work. We use the latest VR hardware and software
+                    Our team consists of experienced VR developers, designers, and technicians who are passionate
+                    about
+                    VR and dedicated to delivering the highest quality work. We use the latest VR hardware and
+                    software
                     to create immersive, interactive experiences that are tailored to your specific needs.
                     From initial consultation to final delivery, we are committed to providing exceptional customer
                     service. Our goal is to ensure that you are completely satisfied with every aspect of your VR
@@ -88,7 +92,8 @@ img:nth-child(3) {
 
 .bg-img {
     background-image: url('/src/assets/img/bgimg.png');
-    width: 990px;
+    max-width: 990px;
+    width: 100%;
     height: 721px;
     background-position: right;
     background-size: cover;
@@ -96,5 +101,54 @@ img:nth-child(3) {
     left: 0;
     bottom: -40%;
     z-index: -1;
+}
+
+section {
+    overflow-x: clip;
+}
+
+@media(max-width:1250px) {
+
+    section {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1000px) {
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right {
+        margin-top: 40px;
+    }
+
+}
+
+@media (max-width: 470px) {
+
+
+    .bacground {
+        max-width: 350px;
+    }
+
+    img:nth-child(1) {
+        width: 90%;
+    }
+
+
+    img:nth-child(3) {
+        bottom: -150px;
+        left: 25%;
+    }
+
+    section {
+        margin-bottom: 80px;
+    }
+
 }
 </style>

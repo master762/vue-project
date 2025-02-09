@@ -19,6 +19,10 @@ export default {
     });
   },
 };
+
+
+
+
 </script>
 <style>
 /* общее */

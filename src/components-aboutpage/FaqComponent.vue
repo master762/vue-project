@@ -183,11 +183,20 @@
 .styled-btn:nth-child(3) {
     width: 98px;
 }
+
+@media(max-width:1250px) {
+
+    section {
+        width: 90%;
+        margin: 0 auto;
+        overflow-x: clip;
+    }
+}
 </style>
 
 
 <script setup>
-import { ref, computed, defineProps } from 'vue';
+import { ref, computed } from 'vue';
 
 const props = defineProps({
     isAlternative: Boolean, // Определяет, на какой странице используется компонент
@@ -229,14 +238,28 @@ const filteredItems = computed(() => {
     return items.value.filter(item => item.category === selectedCategory.value);
 });
 
-// Фильтрация по категориям
+// Фильтрация по категориям с сохранением состояния открытых элементов
 const filterQuestions = (category) => {
     selectedCategory.value = category;
+
+    // Сохраняем состояние открытых элементов перед фильтрацией
+    const openedItems = items.value.filter(item => item.isOpen);
+
+    // Применяем фильтрацию
+    items.value = props.isAlternative ? twoPage : onePage;
+
+    // Восстанавливаем состояние аккордеона для элементов, которые остались
+    items.value.forEach(item => {
+        const matched = openedItems.find(openItem => openItem.title === item.title);
+        if (matched) {
+            item.isOpen = true;
+        }
+    });
 };
 
-// Логика аккордеона
+// Функция для переключения состояния аккордеона
 const toggleAccordion = (index) => {
-    items.value.forEach((item, i) => {
+    filteredItems.value.forEach((item, i) => {
         item.isOpen = i === index ? !item.isOpen : false;
     });
 };

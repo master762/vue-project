@@ -395,6 +395,18 @@ const resumeAnimation = () => {
   }
 }
 
+@media (max-width: 920px) {
+  .ellipses-container {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 820px) {
+  .ellipses-container {
+    max-width: 700px;
+  }
+}
+
 @media (max-width: 768px) {
   .ellipses-container {
     max-width: 600px;
@@ -410,6 +422,12 @@ const resumeAnimation = () => {
 
   .tooltip {
     max-width: 200px;
+  }
+}
+
+@media (max-width: 620px) {
+  .ellipses-container {
+    max-width: 460px;
   }
 }
 

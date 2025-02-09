@@ -18,7 +18,7 @@
                 <p class="caption-2">VR Architecture</p>
                 <p class="heading-3">Bringing Designs to Life: How VR is Changing Architecture</p>
                 <p class="caption-1">NASYIYA ULFA | 25 NOV 2022</p>
-                <img class="mb" src="@/assets/img/Dblog.png" alt="image">
+                <img class="image" src="@/assets/img/Dblog.png" alt="image">
                 <p class="body-1">Architecture is an art and science that is constantly evolving with technology. The
                     industry has gone through various transformations over the years, from pencil and paper sketches to
                     computer-aided design (CAD) software. However, one technology that is revolutionizing architecture
@@ -223,7 +223,7 @@
     margin-bottom: 24px;
 }
 
-.mb {
+.image {
     margin-bottom: 30px;
 }
 
@@ -284,5 +284,58 @@
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+}
+
+@media(max-width:1250px) {
+
+    section {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    .content {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1130px) {
+
+    .image {
+        max-width: 600px;
+    }
+
+    .left {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .content {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .right {
+        grid-column: 1;
+
+    }
+
+    .img-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 670px) {
+
+
+    .image {
+
+        width: 100%;
+    }
 }
 </style>

@@ -1,3 +1,16 @@
+<script>
+import HeaderComponent from "../crosscomponents/HeaderComponent.vue";
+import FooterComponent from "../crosscomponents/FooterComponent.vue";
+import ThemeSwitcher from "../crosscomponents/ThemeSwitcher.vue";
+export default {
+    name: 'MainPage',
+    components: {
+        HeaderComponent,
+        ThemeSwitcher,
+        FooterComponent,
+    },
+};
+</script>
 <template>
     <router-view />
     <ThemeSwitcher />
@@ -69,10 +82,11 @@
     </div>
 
 </template>
+
 <script setup>
 import '@google/model-viewer';
 
-// Определенные цвета
+// Определенные цвета rgb
 const colors = {
     black: [0, 0, 0, 1],
     white: [1, 1, 1, 1],
@@ -82,7 +96,7 @@ const colors = {
 
 };
 
-// Функция смены цвета
+// смена цвета
 const changeColor = (colorName) => {
     const model = document.getElementById("viewer");
 
@@ -257,29 +271,32 @@ model-viewer {
     width: 100%;
     height: 500px;
 }
+
+@media(max-width:1250px) {
+
+    section {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .color-buttons {
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin: 40px auto auto auto;
+    }
+}
+
+@media (max-width: 400px) {
+    model-viewer {
+        height: 200px;
+    }
+
+    .custom-button {
+        width: 80%;
+    }
+}
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
-import HeaderComponent from "../crosscomponents/HeaderComponent.vue";
-import FooterComponent from "../crosscomponents/FooterComponent.vue";
-import ThemeSwitcher from "../crosscomponents/ThemeSwitcher.vue";
-export default {
-    name: 'MainPage',
-    components: {
-        HeaderComponent,
-        ThemeSwitcher,
-        FooterComponent,
-    },
-};
-</script>

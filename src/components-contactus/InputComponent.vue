@@ -75,7 +75,6 @@
 
 input,
 textarea {
-    max-width: 630px;
     width: 100%;
     padding: 11px 0 11px 15px;
     background: rgba(37, 37, 50, 0.6);
@@ -128,6 +127,23 @@ button {
 
 .button-1 {
     color: var(--White);
+}
+
+
+
+@media(max-width:1250px) {
+
+    section {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 740px) {
+    .input-container {
+        width: 100%;
+    }
 }
 </style>
 

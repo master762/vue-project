@@ -1,63 +1,60 @@
 <template>
   <section>
-    <div class="adaptContainer">
-      <!-- Заголовки -->
-      <p class="caption-1" data-aos="fade-up">OUR PRICING</p>
-      <p class="heading-2" data-aos="fade-up" data-aos-delay="200">Affordable VR Services for Everyone</p>
-      <p class="body-1" data-aos="fade-up" data-aos-delay="400">
-        At VRNas, we believe that everyone should have access to the benefits of VR. That's
-        <br />
-        why we offer a range of pricing options to meet the needs of any budget.
-      </p>
-      <div class="components" data-aos="fade-in" data-aos-duration="1500">
-        <div class="bacground">
-          <img class="man" src="@/assets/img/Image7.png" alt="background image" data-aos="zoom-in"
-            data-aos-delay="800" />
-          <div class="text">
-            <!-- Основной текст -->
-            <div class="imageandtextblock" data-aos="fade-right" data-aos-delay="200">
-              <img src="@/assets/img/IconCloud.png" alt="icon" />
-              <div>
-                <p class="heading-9">Customizable Packages</p>
-                <p class="body-3">
-                  We understand that each project is unique, so we offer customizable
-                  packages to ensure that you get the services you need at a price that works
-                  for you.
-                </p>
-              </div>
+    <!-- Заголовки -->
+    <p class="caption-1" data-aos="fade-up">OUR PRICING</p>
+    <p class="heading-2" data-aos="fade-up" data-aos-delay="200">Affordable VR Services for Everyone</p>
+    <p class="body-1" data-aos="fade-up" data-aos-delay="400">
+      At VRNas, we believe that everyone should have access to the benefits of VR. That's
+      <br />
+      why we offer a range of pricing options to meet the needs of any budget.
+    </p>
+    <div class="components" data-aos="fade-in" data-aos-duration="1500">
+      <div class="bacground">
+        <img class="man" src="@/assets/img/Image7.png" alt="background image" data-aos="zoom-in" data-aos-delay="800" />
+        <div class="text">
+          <!-- Основной текст -->
+          <div class="imageandtextblock" data-aos="fade-right" data-aos-delay="200">
+            <img src="@/assets/img/IconCloud.png" alt="icon" />
+            <div>
+              <p class="heading-9">Customizable Packages</p>
+              <p class="body-3">
+                We understand that each project is unique, so we offer customizable
+                packages to ensure that you get the services you need at a price that works
+                for you.
+              </p>
             </div>
-            <div class="imageandtextblock" data-aos="fade-right" data-aos-delay="400">
-              <img src="@/assets/img/IconCloud.png" alt="icon" />
-              <div>
-                <p class="heading-9">Flexible Payment Options</p>
-                <p class="body-3">
-                  We offer flexible payment options to make it easy for you to get started
-                  with our services.
-                </p>
-              </div>
+          </div>
+          <div class="imageandtextblock" data-aos="fade-right" data-aos-delay="400">
+            <img src="@/assets/img/IconCloud.png" alt="icon" />
+            <div>
+              <p class="heading-9">Flexible Payment Options</p>
+              <p class="body-3">
+                We offer flexible payment options to make it easy for you to get started
+                with our services.
+              </p>
             </div>
-            <div class="imageandtextblock" data-aos="fade-right" data-aos-delay="600">
-              <img src="@/assets/img/IconCloud.png" alt="icon" />
-              <div>
-                <p class="heading-9">Satisfaction Guarantee</p>
-                <p class="body-3">
-                  We stand behind our services and are committed to ensuring that you are
-                  completely satisfied with the final product.
-                </p>
-              </div>
+          </div>
+          <div class="imageandtextblock" data-aos="fade-right" data-aos-delay="600">
+            <img src="@/assets/img/IconCloud.png" alt="icon" />
+            <div>
+              <p class="heading-9">Satisfaction Guarantee</p>
+              <p class="body-3">
+                We stand behind our services and are committed to ensuring that you are
+                completely satisfied with the final product.
+              </p>
             </div>
+          </div>
 
-            <img class="light" src="@/assets/img/Light6.png" alt="" data-aos="zoom-in" data-aos-delay="800" />
-            <!-- Блок с ценой -->
-            <div class="priceblock" data-aos="flip-up" data-aos-delay="1000">
-              <div class="priceelements">
-                <p class="caption-2">Start from</p>
-                <p class="customtext">$99</p>
-                <button>
-                  <span class="button-1">get started</span>
-                </button>
-                <p class="body-4">30 Days Moneyback Guarantee</p>
-              </div>
+          <img class="light" src="@/assets/img/Light6.png" alt="" data-aos="zoom-in" data-aos-delay="800" />
+          <!-- Блок с ценой -->
+          <div class="priceblock" data-aos="flip-up" data-aos-delay="1000">
+            <div class="priceelements">
+              <p class="caption-2">Start from</p>
+              <p class="customtext">$99</p>
+              <button>
+                <span class="button-1">get started</span>
+              </button>
+              <p class="body-4">30 Days Moneyback Guarantee</p>
             </div>
           </div>
         </div>
@@ -211,8 +208,11 @@ section {
 }
 
 @media(max-width:1250px) {
+  .man {
+    display: none;
+  }
 
-  .adaptContainer {
+  section {
     width: 90%;
     margin: 0 auto;
   }

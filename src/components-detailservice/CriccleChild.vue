@@ -82,7 +82,7 @@ defineProps({
 }
 
 
-/* позиционирование */
+
 .content {
     max-width: 625px;
 }
@@ -135,5 +135,28 @@ span {
     height: 50px;
     margin: 32px auto auto auto;
     display: block;
+
+}
+
+
+
+
+@media(max-width:1200px) {
+    .content {
+        max-width: 425px;
+    }
+}
+
+@media(max-width:1000px) {
+    .content {
+        max-width: 250px;
+
+    }
+
+    .custom-title {
+        text-align: center;
+    }
+
+
 }
 </style>

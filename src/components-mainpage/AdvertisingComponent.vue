@@ -1,31 +1,29 @@
 <template>
   <section>
-    <div class="adaptContainer">
-      <div class="ads" data-aos="flip-right">
-        <p class="heading-1">Immerse Yourself in Virtual Reality</p>
-        <p class="body-1">Experience Unforgettable Events in VR. Bring your events to <br>life like never before with
-          our VR services</p>
-        <button>
-          <span class="button-1">DISCOVER MORE</span>
-        </button>
-        <img data-aos="fade" class="positionVideo" src="@/assets/img/Video.png" alt="image">
-      </div>
-      <div class="clients" data-aos="fade-right">
-        <div class="clients-img">
-          <img src="@/assets/img/Ellipse1.png" alt="client's photo">
-          <img src="@/assets/img/Ellipse2.png" alt="client's photo">
-          <img src="@/assets/img/Ellipse3.png" alt="client's photo">
-        </div>
-        <div class="clients-text">
-          <div class="position">
-            <p class="clients-count">32k+</p>
-            <img src="@/assets/img/Element.png" alt="image item">
-          </div>
-          <p class="clients-description">Happy Client</p>
-        </div>
-      </div>
-      <img class="positionDecoration" src="@/assets/img/Assets.png" alt="background image">
+    <div class="ads" data-aos="flip-right">
+      <p class="heading-1">Immerse Yourself in Virtual Reality</p>
+      <p class="body-1">Experience Unforgettable Events in VR. Bring your events to <br>life like never before with
+        our VR services</p>
+      <button>
+        <span class="button-1">DISCOVER MORE</span>
+      </button>
+      <img data-aos="fade" class="positionVideo" src="@/assets/img/Video.png" alt="image">
     </div>
+    <div class="clients" data-aos="fade-right">
+      <div class="clients-img">
+        <img src="@/assets/img/Ellipse1.png" alt="client's photo">
+        <img src="@/assets/img/Ellipse2.png" alt="client's photo">
+        <img src="@/assets/img/Ellipse3.png" alt="client's photo">
+      </div>
+      <div class="clients-text">
+        <div class="position">
+          <p class="clients-count">32k+</p>
+          <img src="@/assets/img/Element.png" alt="image item">
+        </div>
+        <p class="clients-description">Happy Client</p>
+      </div>
+    </div>
+    <img class="positionDecoration" src="@/assets/img/Assets.png" alt="background image">
   </section>
 </template>
 <style scoped>
@@ -146,7 +144,7 @@ button {
 
 @media(max-width:1250px) {
 
-  .adaptContainer {
+  section {
     width: 90%;
     margin: 0 auto;
   }

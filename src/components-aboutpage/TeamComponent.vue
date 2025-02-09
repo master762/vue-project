@@ -1,7 +1,9 @@
 <template>
     <section>
         <!-- заголовки, кнопка -->
-        <p class="custom-txt" data-aos="fade-up">OUR TEAM</p>
+        <div class="adapt-flex">
+            <p class="custom-txt" data-aos="fade-up">OUR TEAM</p>
+        </div>
         <div class="flex" data-aos="fade-up">
             <p class="heading-2">Our Professionals Team</p>
             <button class="btn" data-aos="fade-up" data-aos-delay="200"><span class="button-1">SEE ALL</span></button>
@@ -36,6 +38,7 @@
                 </div>
             </div>
         </div>
+        <button class="adapt-btn" data-aos="fade-up" data-aos-delay="200"><span class="button-1">SEE ALL</span></button>
     </section>
 </template>
 
@@ -55,6 +58,7 @@
 
 .button-1 {
     color: var(--White);
+    white-space: nowrap;
 }
 
 .custom-txt {
@@ -78,7 +82,8 @@
     margin-bottom: 41px;
 }
 
-.btn {
+.btn,
+.adapt-btn {
     width: 140px;
     height: 50px;
     padding: 18px 38px 18px 38px;
@@ -89,9 +94,14 @@
     animation: borderAnimation 2s infinite alternate;
 }
 
+.adapt-btn {
+    display: none;
+}
+
 /* картинки */
 img {
-    width: 274px;
+    max-width: 274px;
+    width: 100%;
     padding: 9px;
 
 }
@@ -101,8 +111,8 @@ img {
     flex-direction: column;
     align-items: center;
     background: rgba(37, 37, 50, 0.6);
-    width: 293px;
-    height: 389px;
+    max-width: 293px;
+    max-height: 389px;
     position: relative;
 }
 
@@ -131,4 +141,40 @@ img {
 section {
     margin-bottom: 152px;
 }
+
+
+@media(max-width:1250px) {
+
+    section {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 650px) {
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .adapt-flex {
+        display: flex;
+        justify-content: center;
+    }
+
+    .heading-2 {
+        text-align: center;
+    }
+
+    .adapt-btn {
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 430px) {}
 </style>

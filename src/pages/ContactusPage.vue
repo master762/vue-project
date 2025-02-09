@@ -19,7 +19,6 @@
 </template>
 
 <script>
-// импорты компонентов
 import HeaderComponent from "../crosscomponents/HeaderComponent.vue";
 import FooterComponent from "../crosscomponents/FooterComponent.vue";
 import ThemeSwitcher from "../crosscomponents/ThemeSwitcher.vue";

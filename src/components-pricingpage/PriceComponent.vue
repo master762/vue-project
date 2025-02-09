@@ -167,9 +167,18 @@
     transform: scale(1.1);
 }
 
+.element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35px;
+    padding-bottom: 39px;
+    height: fit-content;
+
+}
+
 .items {
     max-width: 265px;
-    margin: 35px auto 39px auto;
 }
 
 .price {
@@ -190,7 +199,7 @@
     max-width: 292px;
     width: 100%;
     height: 55px;
-    margin: 36px auto 39px auto;
+    margin: 36px auto auto auto;
     background: rgba(255, 255, 255, 0.06);
     display: block;
     color: var(--White);
@@ -205,5 +214,29 @@
     border: none;
     background-size: 200%;
     animation: gradient 3s linear infinite;
+}
+
+@media(max-width:1250px) {
+
+    section {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .element {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
+
+@media (max-width: 820px) {
+    .elements {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 </style>

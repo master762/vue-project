@@ -1,35 +1,33 @@
 <template>
   <section>
-    <div class="adaptContainer">
-      <div class="flex">
-        <p class="caption-1" data-aos="fade-down">{{ caption1 }}</p>
+    <div class="flex">
+      <p class="caption-1" data-aos="fade-down">{{ caption1 }}</p>
+    </div>
+    <div class="flex">
+      <p class="heading-2" data-aos="fade-up" data-aos-delay="100">
+        {{ heading2 }}
+      </p>
+    </div>
+    <div class="video-container" data-aos="zoom-in" data-aos-delay="200">
+      <video ref="video" controls :poster="videoPoster" class="video">
+        <source :src="videoSrc" type="video/mp4" />
+      </video>
+      <div v-show="showButton" class="play-button" @click="playVideo">
+        <img src="@/assets/img/Playbutton.png" alt="Play Button" />
       </div>
-      <div class="flex">
-        <p class="heading-2" data-aos="fade-up" data-aos-delay="100">
-          {{ heading2 }}
+      <div class="text" v-if="showText">
+        <p class="caption-2" data-aos="fade-right" data-aos-delay="300">
+          {{ caption2 }}
+        </p>
+        <p class="heading-4" data-aos="fade-left" data-aos-delay="400">
+          {{ heading4 }}
         </p>
       </div>
-      <div class="video-container" data-aos="zoom-in" data-aos-delay="200">
-        <video ref="video" controls :poster="videoPoster" class="video">
-          <source :src="videoSrc" type="video/mp4" />
-        </video>
-        <div v-show="showButton" class="play-button" @click="playVideo">
-          <img src="@/assets/img/Playbutton.png" alt="Play Button" />
-        </div>
-        <div class="text" v-if="showText">
-          <p class="caption-2" data-aos="fade-right" data-aos-delay="300">
-            {{ caption2 }}
-          </p>
-          <p class="heading-4" data-aos="fade-left" data-aos-delay="400">
-            {{ heading4 }}
-          </p>
-        </div>
-      </div>
-      <div class="btn" data-aos="fade-up" data-aos-delay="500">
-        <button>
-          <p class="customText">GET STARTED</p>
-        </button>
-      </div>
+    </div>
+    <div class="btn" data-aos="fade-up" data-aos-delay="500">
+      <button>
+        <p class="customText">GET STARTED</p>
+      </button>
     </div>
   </section>
 </template>
@@ -139,7 +137,7 @@ button {
 
 @media(max-width:1250px) {
 
-  .adaptContainer {
+  section {
     width: 90%;
     margin: 0 auto;
   }

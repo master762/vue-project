@@ -1,83 +1,81 @@
 <template>
   <section>
-    <div class="adaptContainer">
-      <!-- заголовки, кнопка -->
+    <!-- заголовки, кнопка -->
+    <div class="container">
+      <p class="caption-1" data-aos="fade-up">OUR ARTICLES</p>
+      <div class="flex" data-aos="fade-up" data-aos-delay="100">
+        <p class="heading-2">Stay Up-to-Date with Our VR Insights</p>
+        <button class="customBtn">
+          <span class="customTxt">SEE ALL</span>
+        </button>
+      </div>
+    </div>
+    <div class="position">
+      <!-- визуальные эллементы сзади -->
+      <img class="visual" src="@/assets/img/visual.png" alt="" data-aos="fade-right" data-aos-delay="200">
+      <!-- слайдер -->
       <div class="container">
-        <p class="caption-1" data-aos="fade-up">OUR ARTICLES</p>
-        <div class="flex" data-aos="fade-up" data-aos-delay="100">
-          <p class="heading-2">Stay Up-to-Date with Our VR Insights</p>
-          <button class="customBtn">
-            <span class="customTxt">SEE ALL</span>
+        <p class="heading-6" data-aos="fade-up" data-aos-delay="300">Popular Article</p>
+        <div class="slider" data-aos="fade-up" data-aos-delay="400">
+          <div class="slides" :style="{ transform: `translateX(-${currentSlide * 636}px)` }">
+            <img v-for="(image, index) in images" :key="index" :src="image" alt="">
+          </div>
+          <button v-if="currentSlide > 0" @click="prevSlide" class="slider-btn prev">
+            <img src="@/assets/img/prev.png" alt="">
+          </button>
+          <button v-if="currentSlide < images.length - 1" @click="nextSlide" class="slider-btn next">
+            <img src="@/assets/img/next.png" alt="">
           </button>
         </div>
-      </div>
-      <div class="position">
-        <!-- визуальные эллементы сзади -->
-        <img class="visual" src="@/assets/img/visual.png" alt="" data-aos="fade-right" data-aos-delay="200">
-        <!-- слайдер -->
-        <div class="container">
-          <p class="heading-6" data-aos="fade-up" data-aos-delay="300">Popular Article</p>
-          <div class="slider" data-aos="fade-up" data-aos-delay="400">
-            <div class="slides" :style="{ transform: `translateX(-${currentSlide * 636}px)` }">
-              <img v-for="(image, index) in images" :key="index" :src="image" alt="">
-            </div>
-            <button v-if="currentSlide > 0" @click="prevSlide" class="slider-btn prev">
-              <img src="@/assets/img/prev.png" alt="">
-            </button>
-            <button v-if="currentSlide < images.length - 1" @click="nextSlide" class="slider-btn next">
-              <img src="@/assets/img/next.png" alt="">
-            </button>
-          </div>
-          <!-- индикаторы слайдов -->
-          <div class="indicators" data-aos="fade-up" data-aos-delay="500">
-            <div v-for="(image, index) in images" :key="index" class="indicator"
-              :class="{ active: currentSlide === index }"></div>
-          </div>
+        <!-- индикаторы слайдов -->
+        <div class="indicators" data-aos="fade-up" data-aos-delay="500">
+          <div v-for="(image, index) in images" :key="index" class="indicator"
+            :class="{ active: currentSlide === index }"></div>
         </div>
-        <!-- скролл-блок -->
-        <div class="scroll-block" data-aos="fade-up" data-aos-delay="600">
-          <div class="scroll-elements">
-            <p class="scroll-title" data-aos="fade-up" data-aos-delay="700">Recent Article</p>
-            <div class="element" data-aos="fade-up" data-aos-delay="800">
-              <img src="@/assets/img/scroll1.png" alt="">
-              <div class="scroll-text">
-                <p class="caption-2">VR Education</p>
-                <p class="heading-9">The Future of Education: How VR is Revolutionizing the Classroom</p>
-              </div>
-              <button class="btn"><img src="@/assets/img/next.png" alt=""></button>
+      </div>
+      <!-- скролл-блок -->
+      <div class="scroll-block" data-aos="fade-up" data-aos-delay="600">
+        <div class="scroll-elements">
+          <p class="scroll-title" data-aos="fade-up" data-aos-delay="700">Recent Article</p>
+          <div class="element" data-aos="fade-up" data-aos-delay="800">
+            <img src="@/assets/img/scroll1.png" alt="">
+            <div class="scroll-text">
+              <p class="caption-2">VR Education</p>
+              <p class="heading-9">The Future of Education: How VR is Revolutionizing the Classroom</p>
             </div>
-            <div class="element" data-aos="fade-up" data-aos-delay="900">
-              <img src="@/assets/img/scroll2.png" alt="">
-              <div class="scroll-text">
-                <p class="caption-2">VR Architecture</p>
-                <p class="heading-9">Bringing Designs to Life: How VR is Changing Architecture</p>
-              </div>
-              <button class="btn"><img src="@/assets/img/next.png" alt=""></button>
+            <button class="btn"><img src="@/assets/img/next.png" alt=""></button>
+          </div>
+          <div class="element" data-aos="fade-up" data-aos-delay="900">
+            <img src="@/assets/img/scroll2.png" alt="">
+            <div class="scroll-text">
+              <p class="caption-2">VR Architecture</p>
+              <p class="heading-9">Bringing Designs to Life: How VR is Changing Architecture</p>
             </div>
-            <div class="element" data-aos="fade-up" data-aos-delay="1000">
-              <img src="@/assets/img/scroll3.png" alt="">
-              <div class="scroll-text">
-                <p class="caption-2">VR Entertainment </p>
-                <p class="heading-9">Making Events Memorable: The Power of VR for Corporate and Special Occasions</p>
-              </div>
-              <button class="btn"><img src="@/assets/img/next.png" alt=""></button>
+            <button class="btn"><img src="@/assets/img/next.png" alt=""></button>
+          </div>
+          <div class="element" data-aos="fade-up" data-aos-delay="1000">
+            <img src="@/assets/img/scroll3.png" alt="">
+            <div class="scroll-text">
+              <p class="caption-2">VR Entertainment </p>
+              <p class="heading-9">Making Events Memorable: The Power of VR for Corporate and Special Occasions</p>
             </div>
-            <div class="element" data-aos="fade-up" data-aos-delay="1100">
-              <img src="@/assets/img/scroll4.png" alt="">
-              <div class="scroll-text">
-                <p class="caption-2">VR Event</p>
-                <p class="heading-9">Exploring New Worlds: The Benefits of VR Travel</p>
-              </div>
-              <button class="btn"><img src="@/assets/img/next.png" alt=""></button>
+            <button class="btn"><img src="@/assets/img/next.png" alt=""></button>
+          </div>
+          <div class="element" data-aos="fade-up" data-aos-delay="1100">
+            <img src="@/assets/img/scroll4.png" alt="">
+            <div class="scroll-text">
+              <p class="caption-2">VR Event</p>
+              <p class="heading-9">Exploring New Worlds: The Benefits of VR Travel</p>
             </div>
-            <div class="element" data-aos="fade-up" data-aos-delay="1200">
-              <img src="@/assets/img/scroll5.png" alt="">
-              <div class="scroll-text">
-                <p class="caption-2">Крутой лев</p>
-                <p class="heading-9">Крутой лев стоит, думает, переливается </p>
-              </div>
-              <button class="btn"><img src="@/assets/img/next.png" alt=""></button>
+            <button class="btn"><img src="@/assets/img/next.png" alt=""></button>
+          </div>
+          <div class="element" data-aos="fade-up" data-aos-delay="1200">
+            <img src="@/assets/img/scroll5.png" alt="">
+            <div class="scroll-text">
+              <p class="caption-2">Крутой лев</p>
+              <p class="heading-9">Крутой лев стоит, думает, переливается </p>
             </div>
+            <button class="btn"><img src="@/assets/img/next.png" alt=""></button>
           </div>
         </div>
       </div>
@@ -89,7 +87,7 @@
 /* заголовки, стили их текстов и кнопка */
 .caption-2 {
   color: rgba(255, 255, 255, 1);
-  padding: 2px 10px 2px 10px;
+  padding: 2px 10px;
   background: rgba(255, 255, 255, 0.3);
   width: fit-content;
   border-radius: 16px;
@@ -111,15 +109,12 @@
   margin-bottom: 32px;
   font-size: 28px;
   font-weight: 600;
-  line-height: auto;
-
 }
 
 .customTxt {
   color: var(--White);
   font-size: 14px;
   font-weight: 700;
-  line-height: 14px;
   letter-spacing: 1.5px;
   white-space: nowrap;
 }
@@ -148,7 +143,7 @@
 .customBtn {
   width: 140px;
   height: 50px;
-  padding: 18px 38px 18px 38px;
+  padding: 18px 38px;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid;
   border-image-source: var(--linear);
@@ -163,7 +158,6 @@
   height: 425px;
   overflow: hidden;
   margin-bottom: 44px;
-  /* Отступ снизу для индикаторов */
   z-index: 2;
 }
 
@@ -177,7 +171,6 @@
   height: 425px;
 }
 
-/* Общие стили для кнопок слайдера */
 .slider-btn {
   width: 50px;
   height: 50px;
@@ -189,7 +182,6 @@
   border-image-slice: 1;
 }
 
-/* Позиционирование кнопок */
 .prev {
   bottom: 47px;
   left: 24px;
@@ -242,8 +234,7 @@
 .scroll-elements {
   width: 512px;
   margin: 0 auto;
-  padding: 32px 70px 1px 70px;
-
+  padding: 32px 70px;
 }
 
 .element {
@@ -253,7 +244,6 @@
   padding-bottom: 32px;
   margin-bottom: 32px;
   align-items: center;
-
 }
 
 .scroll-text {
@@ -262,7 +252,6 @@
 }
 
 .btn {
-
   width: 40px;
   height: 40px;
   background-color: rgba(255, 255, 255, 0.06);
@@ -278,23 +267,17 @@
 
 .scroll-block::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0.12);
-  /* Цвет трека */
   border-radius: 32px;
 }
 
 .scroll-block::-webkit-scrollbar-thumb {
   background: var(--White);
-  /* Цвет ползунка */
   border-radius: 32px;
   min-height: 2px;
-  /* Минимальная высота ползунка */
   max-height: 2px;
-  /* Максимальная высота ползунка */
-
 }
 
 /* визуальные эллементы сзади */
-
 .visual {
   position: absolute;
   top: 40px;
@@ -306,8 +289,8 @@ section {
   overflow-x: clip;
 }
 
-@media(max-width:1250px) {
-  .adaptContainer {
+@media (max-width: 1250px) {
+  .section {
     width: 90%;
     margin: 0 auto;
   }
@@ -339,11 +322,7 @@ section {
 
   .scroll-elements {
     width: 400px;
-    padding: 32px 40px 1px 40px;
-  }
-
-  .flex {
-    gap: 100px;
+    padding: 32px 40px;
   }
 
   .heading-2 {
@@ -360,8 +339,6 @@ section {
     font-size: 12px;
   }
 }
-
-
 
 @media (max-width: 1000px) {
   .flex {
@@ -389,15 +366,11 @@ section {
 
   .scroll-elements {
     width: 350px;
-    padding: 32px 30px 1px 30px;
+    padding: 32px 30px;
   }
 
   section {
     margin-bottom: 240px;
-  }
-
-  .flex {
-    gap: 50px;
   }
 
   .heading-2 {
@@ -413,7 +386,6 @@ section {
   .customTxt {
     font-size: 11px;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -449,18 +421,12 @@ section {
 
   .scroll-elements {
     width: 90%;
-    padding: 32px 20px 1px 20px;
+    padding: 32px 20px;
   }
 
   .indicators {
     justify-content: center;
     margin-left: 0;
-  }
-
-  .flex {
-    flex-direction: column;
-    gap: 20px;
-    align-items: flex-start;
   }
 
   .heading-2 {
@@ -504,7 +470,7 @@ section {
 
   .scroll-elements {
     width: 100%;
-    padding: 32px 10px 1px 10px;
+    padding: 32px 10px;
   }
 
   .element {
@@ -527,12 +493,13 @@ section {
 
   .heading-2 {
     font-size: 18px;
+    white-space: normal;
   }
 
   .customBtn {
     width: 80px;
     height: 30px;
-    padding: 8px 15px;
+    padding: 10px 15px;
   }
 
   .customTxt {

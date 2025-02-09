@@ -1,44 +1,42 @@
 <template>
   <section>
-    <div class="adaptContainer">
-      <!-- текст, передаваемый через пропс -->
-      <div v-if="showText" class="flex-props">
-        <p class="custom-txt">WHY CHOOSE US</p>
-        <p class="heading-2">Empowering Your Virtual Reality Experience</p>
+    <!-- текст, передаваемый через пропс -->
+    <div v-if="showText" class="flex-props">
+      <p class="custom-txt">WHY CHOOSE US</p>
+      <p class="heading-2">Empowering Your Virtual Reality Experience</p>
+    </div>
+    <!-- банер -->
+    <div class="banner" data-aos="fade-up">
+      <!-- Первый блок -->
+      <div data-aos="fade-right" data-aos-delay="100">
+        <img src="@/assets/img/banner1.png" alt="item" data-aos="zoom-in" data-aos-delay="200">
+        <p class="heading-7" data-aos="fade-right" data-aos-delay="300">Expertise</p>
+        <p class="body-2" data-aos="fade-right" data-aos-delay="400">
+          Our team consists of experienced VR developers, designers, and technicians who have a passion for VR and a
+          commitment to delivering quality work and give the best service.
+        </p>
       </div>
-      <!-- банер -->
-      <div class="banner" data-aos="fade-up">
-        <!-- Первый блок -->
-        <div data-aos="fade-right" data-aos-delay="100">
-          <img src="@/assets/img/banner1.png" alt="item" data-aos="zoom-in" data-aos-delay="200">
-          <p class="heading-7" data-aos="fade-right" data-aos-delay="300">Expertise</p>
-          <p class="body-2" data-aos="fade-right" data-aos-delay="400">
-            Our team consists of experienced VR developers, designers, and technicians who have a passion for VR and a
-            commitment to delivering quality work and give the best service.
-          </p>
-        </div>
-        <!-- Второй блок -->
-        <div data-aos="fade-right" data-aos-delay="500">
-          <img src="@/assets/img/banner2.png" alt="item" data-aos="zoom-in" data-aos-delay="600">
-          <p class="heading-7" data-aos="fade-right" data-aos-delay="700">Customization</p>
-          <p class="body-2" data-aos="fade-right" data-aos-delay="800">
-            Every client is unique, and we believe every VR experience should be too. We'll work with you to create a
-            customized solution that meets your specific needs and goals.
-          </p>
-        </div>
-        <!-- Третий блок -->
-        <div data-aos="fade-right" data-aos-delay="900">
-          <img src="@/assets/img/banner3.png" alt="item" data-aos="zoom-in" data-aos-delay="1000">
-          <p class="heading-7" data-aos="fade-right" data-aos-delay="1100">Service</p>
-          <p class="body-2" data-aos="fade-right" data-aos-delay="1200">
-            We believe in providing exceptional customer service, from initial consultation to final delivery. Our goal
-            is to ensure you're satisfied with every aspect of your VR experience.
-          </p>
-        </div>
-        <!-- визуальные эллементы сзади -->
-        <img v-if="showImages" class="positionMan" data-aos="fade-left" src="@/assets/img/Image.png" alt="image">
-        <img v-if="showImages" class="lightDecoration" src="@/assets/img/Light.png" alt="background light">
+      <!-- Второй блок -->
+      <div data-aos="fade-right" data-aos-delay="500">
+        <img src="@/assets/img/banner2.png" alt="item" data-aos="zoom-in" data-aos-delay="600">
+        <p class="heading-7" data-aos="fade-right" data-aos-delay="700">Customization</p>
+        <p class="body-2" data-aos="fade-right" data-aos-delay="800">
+          Every client is unique, and we believe every VR experience should be too. We'll work with you to create a
+          customized solution that meets your specific needs and goals.
+        </p>
       </div>
+      <!-- Третий блок -->
+      <div data-aos="fade-right" data-aos-delay="900">
+        <img src="@/assets/img/banner3.png" alt="item" data-aos="zoom-in" data-aos-delay="1000">
+        <p class="heading-7" data-aos="fade-right" data-aos-delay="1100">Service</p>
+        <p class="body-2" data-aos="fade-right" data-aos-delay="1200">
+          We believe in providing exceptional customer service, from initial consultation to final delivery. Our goal
+          is to ensure you're satisfied with every aspect of your VR experience.
+        </p>
+      </div>
+      <!-- визуальные эллементы сзади -->
+      <img v-if="showImages" class="positionMan" data-aos="fade-left" src="@/assets/img/Image.png" alt="image">
+      <img v-if="showImages" class="lightDecoration" src="@/assets/img/Light.png" alt="background light">
     </div>
   </section>
 </template>
@@ -125,7 +123,7 @@ div img {
 
 @media(max-width:1250px) {
 
-  .adaptContainer {
+  section {
     width: 90%;
     margin: 0 auto;
   }

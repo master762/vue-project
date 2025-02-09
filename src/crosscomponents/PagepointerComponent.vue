@@ -19,9 +19,8 @@ import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 
 const route = useRoute();
-
+const routeName = route.name;
 const pageTitle = computed(() => {
-    const routeName = route.name;
     if (routeName === 'AboutPage') return 'About Us';
     if (routeName === 'OurService') return 'Our Service';
     if (routeName === 'Detailservice') return 'Detail service';
@@ -30,7 +29,9 @@ const pageTitle = computed(() => {
     if (routeName === 'Ourteam') return 'Our team';
     if (routeName === 'Contactus') return 'Contact Us';
     if (routeName === 'Faq') return 'FAQ';
-    return 'Page Not Found';
+    if (routeName === 'Conditions') return 'Tems & Conditions';
+    if (routeName === 'Policy') return 'Privacy Policy';
+    return '404';
 });
 
 </script>
@@ -76,5 +77,26 @@ const pageTitle = computed(() => {
 
 .transform {
     transform: rotate(270deg);
+}
+
+section {
+    overflow-x: clip;
+}
+
+@media(max-width:650px) {
+    .light {
+        top: -70%;
+        left: 0;
+
+    }
+}
+
+@media(max-width:450px) {
+    .light {
+        max-width: 469px;
+        top: -40%;
+        left: -5%;
+
+    }
 }
 </style>
