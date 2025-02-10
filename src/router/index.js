@@ -12,6 +12,7 @@ import FaqPage from '@/pages/FaqPage.vue'
 import NotFoundPage from '@/pages/NotfoundPage.vue'
 import ConditionsPage from '../pages/ConditionsPage.vue'
 import PolicyPage from '../pages/PolicyPage.vue'
+import LanguagePage from '@/pages/LanguagePage.vue'
 const routes = [
   {
     path: '/',
@@ -72,6 +73,12 @@ const routes = [
     path: '/Policy',
     name: 'Policy',
     component: PolicyPage,
+  },
+  // тестовый
+  {
+    path: '/Language',
+    name: 'Language',
+    component: LanguagePage,
   },
   {
     path: '/:pathMatch(.*)*',
