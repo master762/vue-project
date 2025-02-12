@@ -1,3 +1,8 @@
+<script setup>
+import MinivideoCompopent from '@/crosscomponents/MinivideoCompopent.vue';
+import video from '../assets/img/minivideo.mp4'
+import poster from '../assets/img/miniposter.png'
+</script>
 <template>
   <section>
     <div class="ads" data-aos="flip-right">
@@ -7,7 +12,7 @@
       <button>
         <span class="button-1">DISCOVER MORE</span>
       </button>
-      <img data-aos="fade" class="positionVideo" src="@/assets/img/Video.png" alt="image">
+      <MinivideoCompopent class="positionVideo" :videoSrc="video" :videoPoster="poster" />
     </div>
     <div class="clients" data-aos="fade-right">
       <div class="clients-img">
@@ -63,6 +68,7 @@ button {
   display: flex;
   align-items: center;
   margin-bottom: 104px;
+  width: fit-content;
 }
 
 .clients-img {
@@ -170,7 +176,3 @@ button {
 
 @media (max-width: 430px) {}
 </style>
-
-<script setup>
-
-</script>

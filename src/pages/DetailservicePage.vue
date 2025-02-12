@@ -1,6 +1,5 @@
 <template>
   <router-view />
-  <ThemeSwitcher />
   <div class="container">
     <div class="clip"></div>
     <header>
@@ -24,7 +23,6 @@
 
 import HeaderComponent from "../crosscomponents/HeaderComponent.vue";
 import FooterComponent from "../crosscomponents/FooterComponent.vue";
-import ThemeSwitcher from "../crosscomponents/ThemeSwitcher.vue";
 import PagepointerComponent from "../crosscomponents/PagepointerComponent.vue"
 import CircleComponent from "@/components-detailservice/CircleComponent.vue";
 import VideoComponent from "@/crosscomponents/VideoComponent.vue";
@@ -39,7 +37,6 @@ export default {
     HeaderComponent,
     PagepointerComponent,
     CircleComponent,
-    ThemeSwitcher,
     FooterComponent,
     VideoComponent,
     VrservicesComponent,

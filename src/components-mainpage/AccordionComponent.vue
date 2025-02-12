@@ -14,7 +14,7 @@
           <div class="accordion-item" v-for="(item, index) in items" :key="index">
             <button class="accordion-header" @click="toggleAccordion(index)">
               <span class="heading-8">{{ item.title }}</span>
-              <img src="@/assets/img/arrow.png" alt="" class="arrow" :class="{ active: item.isOpen }" />
+              <img src="@/assets/img/arrow.png" alt="arrow" class="arrow" :class="{ active: item.isOpen }" />
             </button>
             <div class="accordion-content" :class="{ open: item.isOpen }">
               <p class="body-3">{{ item.content }}</p>
@@ -26,7 +26,8 @@
         <div class="bg-img" data-aos="fade-left" data-aos-delay="300">
           <img src="@/assets/img/Light4.png" alt="background light" />
           <img src="@/assets/img/Image3.png" alt="image" />
-          <img src="@/assets/img/Videovr2.png" alt="image" />
+          <MinivideoCompopent class="positionVideo" :videoSrc="video" :videoPoster="poster" />
+          <!-- <img src="@/assets/img/Videovr2.png" alt="image" /> -->
         </div>
       </div>
     </div>
@@ -109,6 +110,8 @@
   display: grid;
   grid-template-columns: 600px auto;
   gap: 32px;
+  position: relative;
+  z-index: 1;
 }
 
 .bg-img {
@@ -134,10 +137,11 @@
   left: -20%;
 }
 
-.bg-img img:nth-child(3) {
+.positionVideo {
   position: absolute;
   top: 81%;
   left: 50%;
+  z-index: 2;
 }
 
 /* Медиа-запросы */
@@ -191,6 +195,9 @@
 </style>
 
 <script setup>
+import MinivideoCompopent from '@/crosscomponents/MinivideoCompopent.vue';
+import video from '../assets/img/minivideo2.mp4'
+import poster from '../assets/img/Videovr2.png'
 import { ref } from 'vue';
 
 const items = ref([

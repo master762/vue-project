@@ -1,3 +1,8 @@
+<script setup>
+import MinivideoCompopent from '@/crosscomponents/MinivideoCompopent.vue';
+import video from '../assets/img/minivideo.mp4'
+import poster from '../assets/img/miniposter.png'
+</script>
 <template>
     <section>
         <div class="flex">
@@ -25,7 +30,7 @@
                 <div class="bacground" data-aos="zoom-in">
                     <img src="@/assets/img/Image7.png" alt="background image" data-aos="fade-up" />
                     <img src="@/assets/img/Light9.png" alt="background light" data-aos="fade-down" />
-                    <img src="@/assets/img/video3.png" alt="background image" data-aos="fade-left" />
+                    <MinivideoCompopent class="positionVideo" :videoSrc="video" :videoPoster="poster" />
                 </div>
             </div>
         </div>
@@ -84,9 +89,10 @@ img:nth-child(2) {
     right: -40%;
 }
 
-img:nth-child(3) {
-    bottom: -33px;
-    left: -43px;
+.positionVideo {
+    position: absolute;
+    top: 400px;
+    right: 300px;
     z-index: 3;
 }
 
@@ -141,10 +147,7 @@ section {
     }
 
 
-    img:nth-child(3) {
-        bottom: -150px;
-        left: 25%;
-    }
+
 
     section {
         margin-bottom: 80px;

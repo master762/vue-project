@@ -1,6 +1,5 @@
 <template>
     <router-view />
-    <ThemeSwitcher />
     <div class="container">
         <div class="clip"></div>
         <header>
@@ -18,10 +17,8 @@
 </template>
 
 <script>
-// импорты компонентов
 import HeaderComponent from "../crosscomponents/HeaderComponent.vue";
 import FooterComponent from "../crosscomponents/FooterComponent.vue";
-import ThemeSwitcher from "../crosscomponents/ThemeSwitcher.vue";
 import PagepointerComponent from "../crosscomponents/PagepointerComponent.vue";
 import TeamComponent from "@/components-ourteam/TeamComponent.vue";
 import StatisticsComponent from "@/components-ourservice/StatisticsComponent.vue";
@@ -34,7 +31,6 @@ export default {
     components: {
         HeaderComponent,
         PagepointerComponent,
-        ThemeSwitcher,
         TeamComponent,
         StatisticsComponent,
         FooterComponent,

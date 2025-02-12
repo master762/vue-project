@@ -1,19 +1,16 @@
 <script>
 import HeaderComponent from "../crosscomponents/HeaderComponent.vue";
 import FooterComponent from "../crosscomponents/FooterComponent.vue";
-import ThemeSwitcher from "../crosscomponents/ThemeSwitcher.vue";
 export default {
     name: 'MainPage',
     components: {
         HeaderComponent,
-        ThemeSwitcher,
         FooterComponent,
     },
 };
 </script>
 <template>
     <router-view />
-    <ThemeSwitcher />
     <div class="container">
         <div class="clip"></div>
         <header>

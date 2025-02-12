@@ -5,7 +5,6 @@
 </template>
 
 <script>
-// импорт библиотеки для появления блоков (AOS)
 import AOS from "aos";
 import "aos/dist/aos.css";
 export default {
@@ -14,8 +13,8 @@ export default {
   // Инициализация AOS
   mounted() {
     AOS.init({
-      duration: 850, // Длительность анимации
-      once: true, // Анимация срабатывает только один раз
+      duration: 850,
+      once: true,
     });
   },
 };
@@ -30,19 +29,8 @@ export default {
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--theme);
   font-family: 'Chakra Petch', sans-serif;
-}
-
-body {
-  --theme: rgba(24, 24, 27, 1);
-}
-
-body.light-theme {
-  --theme: #ffffff;
-  --Grey1: #4a4a4a;
-  --Grey2: #2a2a2a;
-  --White: #000000;
+  background: rgba(24, 24, 27, 1);
 
 }
 

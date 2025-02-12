@@ -1,11 +1,18 @@
+<script setup>
+import MinivideoCompopent from '@/crosscomponents/MinivideoCompopent.vue';
+import video from '../assets/img/minivideo1.mp4'
+import poster from '../assets/img/Videovr.png'
+</script>
+
 <template>
+
   <section>
     <div class="flex">
       <!-- левая часть -->
       <div class="bg-img" data-aos="zoom-in">
         <img src="@/assets/img/Light2.png" alt="background light" data-aos="fade-down" data-aos-delay="200">
-        <img src="@/assets/img/Image2.png" alt="image" data-aos="fade-up" data-aos-delay="400">
-        <img src="@/assets/img/Videovr.png" alt="image" data-aos="fade-left" data-aos-delay="600">
+        <img src="@/assets/img/Image2.png" alt="image" data-aos="fade" data-aos-delay="400">
+        <MinivideoCompopent class="positionVideo" :videoSrc="video" :videoPoster="poster" />
       </div>
       <!-- правая часть -->
       <div class="sectionDescription" data-aos="fade-right">
@@ -76,6 +83,8 @@
   display: flex;
   gap: 222px;
   margin-bottom: 165px;
+  position: relative;
+  z-index: 1;
 }
 
 .sectionDescription {
@@ -110,6 +119,7 @@ button {
   height: 500px;
   position: relative;
   z-index: -2;
+
 }
 
 .bg-img img:nth-child(1) {
@@ -118,18 +128,20 @@ button {
   left: -10%;
   z-index: -1;
 
+
 }
 
 .bg-img img:nth-child(2) {
   position: absolute;
   top: -24.7%;
   left: 5%;
+
 }
 
-.bg-img img:nth-child(3) {
+.positionVideo {
   position: absolute;
-  top: 78%;
-  left: 80%;
+  top: 400px;
+  left: 350px;
 }
 
 
@@ -165,24 +177,4 @@ button {
   }
 
 }
-
-.bg-img img:nth-child(2) {
-  top: 35px;
-  left: 5%;
-  width: 389px;
-
-}
-
-.bg-img img:nth-child(3) {
-  bottom: 78%;
-  left: 60%;
-
-}
 </style>
-
-
-
-
-<script setup>
-
-</script>

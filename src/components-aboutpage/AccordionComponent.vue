@@ -22,7 +22,7 @@
         <div class="bg-img" data-aos="fade-left" data-aos-delay="300">
           <img src="@/assets/img/light10.png" alt="bacground light" />
           <img src="@/assets/img/image8.png" alt="bacground image" />
-          <img src="@/assets/img/video4.png" alt="bacground image" />
+          <MinivideoCompopent class="positionVideo" :videoSrc="video" :videoPoster="poster" />
         </div>
       </div>
     </div>
@@ -112,6 +112,8 @@
   grid-auto-flow: column;
   grid-template-columns: auto 600px;
   gap: 32px;
+  position: relative;
+  z-index: 1;
 }
 
 .bg-img {
@@ -137,10 +139,11 @@
   left: -13%;
 }
 
-.bg-img img:nth-child(3) {
+.positionVideo {
   position: absolute;
   bottom: -52px;
   right: -45px;
+  z-index: 2;
 }
 
 /* Медиа-запросы */
@@ -195,6 +198,9 @@
 
 <script setup>
 import { ref } from 'vue';
+import MinivideoCompopent from '@/crosscomponents/MinivideoCompopent.vue';
+import video from '../assets/img/minivideo1.mp4'
+import poster from '../assets/img/Videovr.png'
 
 const items = ref([
   {

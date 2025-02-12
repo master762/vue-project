@@ -28,7 +28,6 @@
 </template>
 
 <script>
-// импорты компонентов
 import AccordionComponent from "../components-mainpage/AccordionComponent.vue";
 import AdvertisingComponent from "../components-mainpage/AdvertisingComponent.vue";
 import BunnerComponent from "../crosscomponents/BunnerComponent.vue";
@@ -41,7 +40,6 @@ import VideoComponent from "../crosscomponents/VideoComponent.vue";
 import VrservicesComponent from "../crosscomponents/VrservicesComponent.vue";
 import OurarticlesComponent from "../components-mainpage/OurarticlesComponent.vue";
 import FooterComponent from "../crosscomponents/FooterComponent.vue";
-import ThemeSwitcher from "../crosscomponents/ThemeSwitcher.vue";
 
 export default {
   name: 'MainPage',
@@ -58,7 +56,6 @@ export default {
     DiscoverComponent,
     OurarticlesComponent,
     FooterComponent,
-    ThemeSwitcher,
   },
 };
 </script>
