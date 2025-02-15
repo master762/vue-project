@@ -20,6 +20,7 @@ import { useRoute } from 'vue-router';
 
 const route = useRoute();
 const routeName = route.name;
+
 const pageTitle = computed(() => {
     if (routeName === 'AboutPage') return 'About Us';
     if (routeName === 'OurService') return 'Our Service';

@@ -98,12 +98,13 @@ const isBlogMenuVisible = ref(false);
 
 const togglePageMenu = () => {
   isPageMenuVisible.value = !isPageMenuVisible.value;
-  if (isBlogMenuVisible.value) isBlogMenuVisible.value = false;
+  isBlogMenuVisible.value = false;
+
 };
 
 const toggleBlogMenu = () => {
   isBlogMenuVisible.value = !isBlogMenuVisible.value;
-  if (isPageMenuVisible.value) isPageMenuVisible.value = false;
+  isPageMenuVisible.value = false;
 };
 </script>
 

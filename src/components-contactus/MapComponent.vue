@@ -16,7 +16,7 @@ onMounted(() => {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/attributions">CartoDB</a>',
     }).addTo(map);
 
-    // Кастомная метка
+
     const customIcon = L.icon({
         iconUrl: '/Maps.png',
         iconSize: [64, 64],

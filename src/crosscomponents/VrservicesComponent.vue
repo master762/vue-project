@@ -250,7 +250,3 @@ section {
 
 @media (max-width: 430px) {}
 </style>
-
-<script setup>
-
-</script>

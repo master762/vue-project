@@ -232,23 +232,16 @@ const twoPage = [
 const items = ref(props.isAlternative ? twoPage : onePage);
 const selectedCategory = ref('All');
 
-// Фильтр отображаемых вопросов
+// Фильтр 
 const filteredItems = computed(() => {
     if (selectedCategory.value === 'All') return items.value;
     return items.value.filter(item => item.category === selectedCategory.value);
 });
 
-// Фильтрация по категориям с сохранением состояния открытых элементов
 const filterQuestions = (category) => {
     selectedCategory.value = category;
-
-    // Сохраняем состояние открытых элементов перед фильтрацией
     const openedItems = items.value.filter(item => item.isOpen);
-
-    // Применяем фильтрацию
     items.value = props.isAlternative ? twoPage : onePage;
-
-    // Восстанавливаем состояние аккордеона для элементов, которые остались
     items.value.forEach(item => {
         const matched = openedItems.find(openItem => openItem.title === item.title);
         if (matched) {
@@ -257,13 +250,11 @@ const filterQuestions = (category) => {
     });
 };
 
-// Функция для переключения состояния аккордеона
 const toggleAccordion = (index) => {
     filteredItems.value.forEach((item, i) => {
         item.isOpen = i === index ? !item.isOpen : false;
     });
 };
 
-// Показывать ли кнопки фильтрации (только на второй странице)
 const showFilter = props.isAlternative;
 </script>
