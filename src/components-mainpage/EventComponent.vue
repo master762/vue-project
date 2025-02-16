@@ -35,9 +35,11 @@ import poster from '../assets/img/Videovr.png'
           <img src="@/assets/img/accept.png" alt="image item">
           <p class="body-3">Affordable and Accessible</p>
         </div>
-        <button data-aos="zoom-in" data-aos-delay="800">
-          <span class="btnText">READ MORE</span>
-        </button>
+        <RouterLink to="/OurService">
+          <button data-aos="zoom-in" data-aos-delay="800">
+            <span class="btnText">READ MORE</span>
+          </button>
+        </RouterLink>
       </div>
     </div>
   </section>

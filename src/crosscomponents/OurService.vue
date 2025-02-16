@@ -18,15 +18,21 @@
                     <p class="header-7">VR Development</p>
                     <p class="body-2">From concept to creation, our team of VR developers will bring your vision to
                         life.</p>
-                    <button class="hidenBtn"><span class="customText">LEARN MORE</span></button>
+                    <RouterLink to="/Detailservice">
+                        <button class="hidenBtn"><span class="customText">LEARN MORE</span></button>
+                    </RouterLink>
                 </div>
+
                 <div class="card" data-aos="fade-up">
                     <img src="@/assets/img/Design.png" alt="item">
                     <p class="header-7">VR Design</p>
                     <p class="body-2">Our talented VR designers will create immersive and engaging environments that
                         will captivate your audience.</p>
-                    <button class="hidenBtn"><span class="customText">LEARN MORE</span></button>
+                    <RouterLink to="/Detailservice">
+                        <button class="hidenBtn"><span class="customText">LEARN MORE</span></button>
+                    </RouterLink>
                 </div>
+
             </div>
             <div class="doubleCards">
                 <div class="card" data-aos="fade-up">
@@ -34,15 +40,20 @@
                     <p class="header-7">VR Consulting</p>
                     <p class="body-2">Our VR consultants will work with you to ensure that your VR experience meets
                         your goals and exceeds your expectations.</p>
-                    <button class="hidenBtn"><span class="customText">LEARN MORE</span></button>
+                    <RouterLink to="/Detailservice">
+                        <button class="hidenBtn"><span class="customText">LEARN MORE</span></button>
+                    </RouterLink>
                 </div>
+
 
                 <div class="card" data-aos="fade-up">
                     <img src="@/assets/img/Games.png" alt="item">
                     <p class="header-7">VR Games</p>
                     <p class="body-2">We offer a wide selection of VR games that are suitable for players of all
                         ages and skill levels.</p>
-                    <button class="hidenBtn"><span class="customText">LEARN MORE</span></button>
+                    <RouterLink to="/Detailservice">
+                        <button class="hidenBtn"><span class="customText">LEARN MORE</span></button>
+                    </RouterLink>
                 </div>
             </div>
             <div class="doubleCards">
@@ -50,16 +61,22 @@
                     <img src="@/assets/img/Events.png" alt="item">
                     <p class="header-7">VR Events</p>
                     <p class="body-2">Make your next event unforgettable with our VR event services.</p>
-                    <button class="hidenBtn"><span class="customText">LEARN MORE</span></button>
+                    <RouterLink to="/Detailservice">
+                        <button class="hidenBtn"><span class="customText">LEARN MORE</span></button>
+                    </RouterLink>
                 </div>
+
 
                 <div class="card" data-aos="fade-up">
                     <img src="@/assets/img/Entertaiment.png" alt="item">
                     <p class="header-7">VR Entertainment</p>
                     <p class="body-2">reate a VR escape room, or offer VR experiences at a theme park, we have the
                         expertise and experience to make it happen.</p>
-                    <button class="hidenBtn"><span class="customText">LEARN MORE</span></button>
+                    <RouterLink to="/Detailservice">
+                        <button class="hidenBtn"><span class="customText">LEARN MORE</span></button>
+                    </RouterLink>
                 </div>
+
             </div>
         </div>
     </section>

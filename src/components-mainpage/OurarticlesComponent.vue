@@ -5,9 +5,11 @@
       <p class="caption-1" data-aos="fade-up">OUR ARTICLES</p>
       <div class="flex" data-aos="fade-up" data-aos-delay="100">
         <p class="heading-2">Stay Up-to-Date with Our VR Insights</p>
-        <button class="customBtn">
-          <span class="customTxt">SEE ALL</span>
-        </button>
+        <RouterLink to="/DetailBlog">
+          <button class="customBtn">
+            <span class="customTxt">SEE ALL</span>
+          </button>
+        </RouterLink>
       </div>
     </div>
     <div class="position">
@@ -43,7 +45,9 @@
               <p class="caption-2">VR Education</p>
               <p class="heading-9">The Future of Education: How VR is Revolutionizing the Classroom</p>
             </div>
-            <button class="btn"><img src="@/assets/img/next.png" alt=""></button>
+            <RouterLink to="/DetailBlog">
+              <button class="btn"><img src="@/assets/img/next.png" alt=""></button>
+            </RouterLink>
           </div>
           <div class="element" data-aos="fade-up" data-aos-delay="900">
             <img src="@/assets/img/scroll2.png" alt="">
@@ -51,7 +55,9 @@
               <p class="caption-2">VR Architecture</p>
               <p class="heading-9">Bringing Designs to Life: How VR is Changing Architecture</p>
             </div>
-            <button class="btn"><img src="@/assets/img/next.png" alt=""></button>
+            <RouterLink to="/DetailBlog">
+              <button class="btn"><img src="@/assets/img/next.png" alt=""></button>
+            </RouterLink>
           </div>
           <div class="element" data-aos="fade-up" data-aos-delay="1000">
             <img src="@/assets/img/scroll3.png" alt="">
@@ -59,7 +65,9 @@
               <p class="caption-2">VR Entertainment </p>
               <p class="heading-9">Making Events Memorable: The Power of VR for Corporate and Special Occasions</p>
             </div>
-            <button class="btn"><img src="@/assets/img/next.png" alt=""></button>
+            <RouterLink to="/DetailBlog">
+              <button class="btn"><img src="@/assets/img/next.png" alt=""></button>
+            </RouterLink>
           </div>
           <div class="element" data-aos="fade-up" data-aos-delay="1100">
             <img src="@/assets/img/scroll4.png" alt="">
@@ -67,7 +75,9 @@
               <p class="caption-2">VR Event</p>
               <p class="heading-9">Exploring New Worlds: The Benefits of VR Travel</p>
             </div>
-            <button class="btn"><img src="@/assets/img/next.png" alt=""></button>
+            <RouterLink to="/DetailBlog">
+              <button class="btn"><img src="@/assets/img/next.png" alt=""></button>
+            </RouterLink>
           </div>
           <div class="element" data-aos="fade-up" data-aos-delay="1200">
             <img src="@/assets/img/scroll5.png" alt="">
@@ -75,7 +85,9 @@
               <p class="caption-2">Крутой лев</p>
               <p class="heading-9">Крутой лев стоит, думает, переливается </p>
             </div>
-            <button class="btn"><img src="@/assets/img/next.png" alt=""></button>
+            <RouterLink to="/DetailBlog">
+              <button class="btn"><img src="@/assets/img/next.png" alt=""></button>
+            </RouterLink>
           </div>
         </div>
       </div>

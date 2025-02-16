@@ -25,9 +25,11 @@
       </div>
     </div>
     <div class="btn" data-aos="fade-up" data-aos-delay="500">
-      <button>
-        <p class="customText">GET STARTED</p>
-      </button>
+      <RouterLink to="/Detailservice">
+        <button>
+          <p class="customText">GET STARTED</p>
+        </button>
+      </RouterLink>
     </div>
   </section>
 </template>

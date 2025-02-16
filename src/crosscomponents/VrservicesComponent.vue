@@ -51,9 +51,11 @@
             <div class="priceelements">
               <p class="caption-2">Start from</p>
               <p class="customtext">$99</p>
-              <button>
-                <span class="button-1">get started</span>
-              </button>
+              <RouterLink to="/Detailservice">
+                <button>
+                  <span class="button-1">get started</span>
+                </button>
+              </RouterLink>
               <p class="body-4">30 Days Moneyback Guarantee</p>
             </div>
           </div>

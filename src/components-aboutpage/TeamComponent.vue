@@ -6,7 +6,11 @@
         </div>
         <div class="flex" data-aos="fade-up">
             <p class="heading-2">Our Professionals Team</p>
-            <button class="btn" data-aos="fade-up" data-aos-delay="200"><span class="button-1">SEE ALL</span></button>
+            <RouterLink to="/Ourteam">
+                <button class="btn" data-aos="fade-up" data-aos-delay="200">
+                    <span class="button-1">SEEALL</span>
+                </button>
+            </RouterLink>
         </div>
         <div class="images">
             <div class="image-card" data-aos="fade-up" data-aos-delay="400">

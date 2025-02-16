@@ -9,9 +9,10 @@ import poster from '../assets/img/miniposter.png'
       <p class="heading-1">Immerse Yourself in Virtual Reality</p>
       <p class="body-1">Experience Unforgettable Events in VR. Bring your events to <br>life like never before with
         our VR services</p>
-      <button>
-        <span class="button-1">DISCOVER MORE</span>
-      </button>
+      <RouterLink to="/OurService"><button>
+          <span class="button-1">DISCOVER MORE</span>
+        </button>
+      </RouterLink>
       <MinivideoCompopent class="positionVideo" :videoSrc="video" :videoPoster="poster" />
     </div>
     <div class="clients" data-aos="fade-right">

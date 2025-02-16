@@ -28,10 +28,11 @@
         <p class="body-1">
             {{ content.bodyBottom2 }}
         </p>
-
-        <button class="custom-btn">
-            <span>CONTACT US</span>
-        </button>
+        <RouterLink to="/Contactus">
+            <button class="custom-btn">
+                <span>CONTACT US</span>
+            </button>
+        </RouterLink>
     </div>
 </template>
 
