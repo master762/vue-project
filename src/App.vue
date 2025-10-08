@@ -288,7 +288,7 @@ img {
   line-height: 28px;
 }
 
-/* костыли */
+
 header {
   height: 114px;
   margin-bottom: 87px;

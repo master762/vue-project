@@ -51,11 +51,6 @@
                 <p class="navigation">Our Team</p>
               </li>
             </router-link>
-            <router-link to="/Language">
-              <li>
-                <p class="navigation">Language</p>
-              </li>
-            </router-link>
 
           </ul>
         </li>

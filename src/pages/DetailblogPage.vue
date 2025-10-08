@@ -15,9 +15,9 @@
 </template>
 
 <script>
-import HeaderComponent from "../crosscomponents/HeaderComponent.vue";
-import FooterComponent from "../crosscomponents/FooterComponent.vue";
-import DetailblogComponent from "@/components-detailblog/DetailblogComponent.vue";
+import HeaderComponent from "../components/HeaderComponent.vue";
+import FooterComponent from "../components/FooterComponent.vue";
+import DetailblogComponent from "@/components/DetailblogComponent.vue";
 
 
 

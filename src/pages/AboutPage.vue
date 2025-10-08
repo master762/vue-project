@@ -21,15 +21,15 @@
 </template>
 
 <script>
-import HeaderComponent from "../crosscomponents/HeaderComponent.vue";
-import FooterComponent from "../crosscomponents/FooterComponent.vue";
-import PagepointerComponent from "../crosscomponents/PagepointerComponent.vue";
-import BringingComponent from "../components-aboutpage/BringingComponent.vue";
-import BunnerComponent from "../crosscomponents/BunnerComponent.vue";
-import AccordionComponent from "@/components-aboutpage/AccordionComponent.vue";
-import TeamComponent from "@/components-aboutpage/TeamComponent.vue";
-import DiscoverComponent from "@/components-mainpage/DiscoverComponent.vue";
-import FaqComponent from "@/components-aboutpage/FaqComponent.vue";
+import HeaderComponent from "../components/HeaderComponent.vue";
+import FooterComponent from "../components/FooterComponent.vue";
+import PagepointerComponent from "../components/PagepointerComponent.vue";
+import BringingComponent from "@/components/BringingComponent.vue";
+import BunnerComponent from "../components/BunnerComponent.vue";
+import AccordionComponent from "@/components/AccordionComponent.vue";
+import TeamComponent from "@/components/TeamComponent.vue";
+import DiscoverComponent from "@/components/DiscoverComponent.vue";
+import FaqComponent from "@/components/FaqComponent.vue";
 
 
 export default {

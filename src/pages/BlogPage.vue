@@ -16,10 +16,10 @@
 </template>
 
 <script>
-import HeaderComponent from "../crosscomponents/HeaderComponent.vue";
-import FooterComponent from "../crosscomponents/FooterComponent.vue";
-import PagepointerComponent from "../crosscomponents/PagepointerComponent.vue";
-import BlogComponent from "../components-blog/BlogComponent.vue";
+import HeaderComponent from "../components/HeaderComponent.vue";
+import FooterComponent from "../components/FooterComponent.vue";
+import PagepointerComponent from "../components/PagepointerComponent.vue";
+import BlogComponent from "../components/BlogComponent.vue";
 
 
 

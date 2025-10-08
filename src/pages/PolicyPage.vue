@@ -14,10 +14,10 @@
 </template>
 
 <script>
-import HeaderComponent from "../crosscomponents/HeaderComponent.vue";
-import FooterComponent from "../crosscomponents/FooterComponent.vue";
-import PagepointerComponent from "../crosscomponents/PagepointerComponent.vue";
-import PolicyComponent from "@/components-policy/PolicyComponent.vue";
+import HeaderComponent from "../components/HeaderComponent.vue";
+import FooterComponent from "../components/FooterComponent.vue";
+import PagepointerComponent from "../components/PagepointerComponent.vue";
+import PolicyComponent from "@/components/PolicyComponent.vue";
 
 export default {
     name: 'MainPage',

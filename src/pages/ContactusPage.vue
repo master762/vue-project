@@ -18,12 +18,12 @@
 </template>
 
 <script>
-import HeaderComponent from "../crosscomponents/HeaderComponent.vue";
-import FooterComponent from "../crosscomponents/FooterComponent.vue";
-import PagepointerComponent from "../crosscomponents/PagepointerComponent.vue";
-import InfoComponent from "@/components-contactus/InfoComponent.vue";
-import InputComponent from "@/components-contactus/InputComponent.vue";
-import MapComponent from "@/components-contactus/MapComponent.vue";
+import HeaderComponent from "../components/HeaderComponent.vue";
+import FooterComponent from "../components/FooterComponent.vue";
+import PagepointerComponent from "../components/PagepointerComponent.vue";
+import InfoComponent from "@/components/InfoComponent.vue";
+import InputComponent from "@/components/InputComponent.vue";
+import MapComponent from "@/components/MapComponent.vue";
 
 
 

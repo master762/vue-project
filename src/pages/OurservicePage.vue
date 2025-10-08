@@ -19,13 +19,13 @@
 </template>
 
 <script>
-import HeaderComponent from "../crosscomponents/HeaderComponent.vue";
-import FooterComponent from "../crosscomponents/FooterComponent.vue";
-import PagepointerComponent from "../crosscomponents/PagepointerComponent.vue";
-import OurService from "@/crosscomponents/OurService.vue";
-import StatisticsComponent from "@/components-ourservice/StatisticsComponent.vue";
-import VrservicesComponent from "@/crosscomponents/VrservicesComponent.vue";
-import SunsustemComponent from "@/crosscomponents/SunsustemComponent.vue";
+import HeaderComponent from "../components/HeaderComponent.vue";
+import FooterComponent from "../components/FooterComponent.vue";
+import PagepointerComponent from "../components/PagepointerComponent.vue";
+import OurService from "@/components/OurService.vue";
+import StatisticsComponent from "@/components/StatisticsComponent.vue";
+import VrservicesComponent from "@/components/VrservicesComponent.vue";
+import SunsustemComponent from "@/components/SunsustemComponent.vue";
 
 
 export default {

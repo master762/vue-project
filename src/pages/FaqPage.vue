@@ -17,10 +17,10 @@
 
 <script>
 
-import HeaderComponent from "../crosscomponents/HeaderComponent.vue";
-import FooterComponent from "../crosscomponents/FooterComponent.vue";
-import FaqComponent from "@/components-aboutpage/FaqComponent.vue";
-import PagepointerComponent from "@/crosscomponents/PagepointerComponent.vue";
+import HeaderComponent from "../components/HeaderComponent.vue";
+import FooterComponent from "../components/FooterComponent.vue";
+import FaqComponent from "@/components/FaqComponent.vue";
+import PagepointerComponent from "@/components/PagepointerComponent.vue";
 
 
 

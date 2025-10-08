@@ -1,5 +1,5 @@
 <script setup>
-import MinivideoCompopent from '@/crosscomponents/MinivideoCompopent.vue';
+import MinivideoCompopent from '@/components/MinivideoCompopent.vue';
 import video from '../assets/img/minivideo1.mp4'
 import poster from '../assets/img/Videovr.png'
 </script>

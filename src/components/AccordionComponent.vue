@@ -195,7 +195,7 @@
 </style>
 
 <script setup>
-import MinivideoCompopent from '@/crosscomponents/MinivideoCompopent.vue';
+import MinivideoCompopent from '@/components/MinivideoCompopent.vue';
 import video from '../assets/img/minivideo2.mp4'
 import poster from '../assets/img/Videovr2.png'
 import { ref } from 'vue';

@@ -28,18 +28,18 @@
 </template>
 
 <script>
-import AccordionComponent from "../components-mainpage/AccordionComponent.vue";
-import AdvertisingComponent from "../components-mainpage/AdvertisingComponent.vue";
-import BunnerComponent from "../crosscomponents/BunnerComponent.vue";
-import DiscoverComponent from "../components-mainpage/DiscoverComponent.vue";
-import EventComponent from "../components-mainpage/EventComponent.vue";
-import HeaderComponent from "../crosscomponents/HeaderComponent.vue";
-import OurService from "../crosscomponents/OurService.vue";
-import SunsustemComponent from "../crosscomponents/SunsustemComponent.vue";
-import VideoComponent from "../crosscomponents/VideoComponent.vue";
-import VrservicesComponent from "../crosscomponents/VrservicesComponent.vue";
-import OurarticlesComponent from "../components-mainpage/OurarticlesComponent.vue";
-import FooterComponent from "../crosscomponents/FooterComponent.vue";
+import AccordionComponent from "../components/AccordionComponent.vue";
+import AdvertisingComponent from "../components/AdvertisingComponent.vue";
+import BunnerComponent from "../components/BunnerComponent.vue";
+import DiscoverComponent from "../components/DiscoverComponent.vue";
+import EventComponent from "../components/EventComponent.vue";
+import HeaderComponent from "../components/HeaderComponent.vue";
+import OurService from "../components/OurService.vue";
+import SunsustemComponent from "../components/SunsustemComponent.vue";
+import VideoComponent from "../components/VideoComponent.vue";
+import VrservicesComponent from "../components/VrservicesComponent.vue";
+import OurarticlesComponent from "../components/OurarticlesComponent.vue";
+import FooterComponent from "../components/FooterComponent.vue";
 
 export default {
   name: 'MainPage',

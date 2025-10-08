@@ -21,12 +21,12 @@
 
 <script>
 
-import HeaderComponent from "../crosscomponents/HeaderComponent.vue";
-import FooterComponent from "../crosscomponents/FooterComponent.vue";
-import PagepointerComponent from "../crosscomponents/PagepointerComponent.vue"
-import CircleComponent from "@/components-detailservice/CircleComponent.vue";
-import VideoComponent from "@/crosscomponents/VideoComponent.vue";
-import VrservicesComponent from "@/crosscomponents/VrservicesComponent.vue";
+import HeaderComponent from "../components/HeaderComponent.vue";
+import FooterComponent from "../components/FooterComponent.vue";
+import PagepointerComponent from "../components/PagepointerComponent.vue"
+import CircleComponent from "@/components/CircleComponent.vue";
+import VideoComponent from "@/components/VideoComponent.vue";
+import VrservicesComponent from "@/components/VrservicesComponent.vue";
 
 
 

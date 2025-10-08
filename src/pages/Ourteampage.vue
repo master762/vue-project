@@ -7,7 +7,7 @@
         </header>
         <main>
             <PagepointerComponent :style="{ marginBottom: '95px' }" />
-            <TeamComponent />
+            <OurteamComponent />
             <StatisticsComponent />
         </main>
         <footer>
@@ -17,11 +17,11 @@
 </template>
 
 <script>
-import HeaderComponent from "../crosscomponents/HeaderComponent.vue";
-import FooterComponent from "../crosscomponents/FooterComponent.vue";
-import PagepointerComponent from "../crosscomponents/PagepointerComponent.vue";
-import TeamComponent from "@/components-ourteam/TeamComponent.vue";
-import StatisticsComponent from "@/components-ourservice/StatisticsComponent.vue";
+import HeaderComponent from "../components/HeaderComponent.vue";
+import FooterComponent from "../components/FooterComponent.vue";
+import PagepointerComponent from "../components/PagepointerComponent.vue";
+import OurteamComponent from "@/components/OurteamComponent.vue";
+import StatisticsComponent from "@/components/StatisticsComponent.vue";
 
 
 
@@ -31,7 +31,7 @@ export default {
     components: {
         HeaderComponent,
         PagepointerComponent,
-        TeamComponent,
+        OurteamComponent,
         StatisticsComponent,
         FooterComponent,
     },
